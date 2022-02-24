@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7cff11c7ec47549bcccecc79b8a5a2, type: 3}
+  m_Name: Lecturer1
+  m_EditorClassIdentifier: 
+  mob_name: Owo
+  description: 
+  frontSprite: {fileID: -128083769461270964, guid: ad2444eeca406ce47a372b1cdb6a8287, type: 3}
+  backSprite: {fileID: -128083769461270964, guid: ad2444eeca406ce47a372b1cdb6a8287, type: 3}
+  maxKp: 0
+  attack: 0
+  defense: 0
+  speed: 0
