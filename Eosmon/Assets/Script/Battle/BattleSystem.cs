@@ -44,12 +44,12 @@ public class BattleSystem : MonoBehaviour
     {
         state = BattleState.Busy;
         Answer answer = new Answer(new AnswerBase("Test", "Test answer", mobType.Regular, 10));
-        yield return dialogBox.TypeDialog($"Answer is...{answer}");
+        yield return dialogBox.TypeDialog($"Answer is...{answer.Base.Description}");
 
         yield return new WaitForSeconds(1f);
 
         bool isFainted = enemy.Lecturer.TakeDamage(answer, player.Lecturer);
-        playerHud.UpdateKP();
+        enemyHud.UpdateKP();
 
         if (isFainted)
         {
@@ -64,11 +64,21 @@ public class BattleSystem : MonoBehaviour
     IEnumerator EnemyMove()
     {
         state = BattleState.EnemyMove;
-        var move = enemy.Lecturer.GetRandomQuestion();
+        Answer question = enemy.Lecturer.GetRandomQuestion();
         playerHud.UpdateKP();
-        yield return dialogBox.TypeDialog($"New question is...{move}");
+        yield return dialogBox.TypeDialog($"Next question is...{question}");
         yield return new WaitForSeconds(1f);
-        PlayerAction();
+        bool isFainted = player.Lecturer.TakeDamage(question, player.Lecturer);
+        playerHud.UpdateKP();
+
+        if (isFainted)
+        {
+            yield return dialogBox.TypeDialog("You are not worthy");
+        }
+        else
+        {
+            PlayerAction();
+        }
     }
 
     void PlayerAction()
@@ -103,7 +113,7 @@ public class BattleSystem : MonoBehaviour
         var movesCount = 4;
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            if (currentMove < movesCount -1)
+            if (currentMove < movesCount - 1)
             {
                 ++currentMove;
             }
@@ -130,6 +140,13 @@ public class BattleSystem : MonoBehaviour
             }
         }
         dialogBox.UpdateMoveSelection(currentMove);
+
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            dialogBox.EnabledMoveSelector(false);
+            dialogBox.EnableDialogText(true);
+            StartCoroutine(PerformPlayerMove());
+        }
     }
 
 

@@ -13,15 +13,14 @@ public class BattleHud : MonoBehaviour
 
     public void SetData(Lecturer lecturer)
     {
+        _lecturer = lecturer;
         nameText.text = lecturer.Base.Name;
         levelText.text = "lvl" + lecturer.Level;
         kpBar.SetKP(lecturer.KP / lecturer.MaxKp);
-
     }
 
     public void UpdateKP()
     {
         kpBar.SetKP((float)_lecturer.KP / (float)_lecturer.MaxKp);
-
     }
 }

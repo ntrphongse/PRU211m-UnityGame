@@ -14,8 +14,8 @@ public class MobBase : ScriptableObject
 
     //Base stats
     [SerializeField] int maxKp;
-    [SerializeField] int attack;
-    [SerializeField] int defense;
+    [SerializeField] int attack = 10;
+    [SerializeField] int defense = 5;
     [SerializeField] int speed;
 
     public string Name

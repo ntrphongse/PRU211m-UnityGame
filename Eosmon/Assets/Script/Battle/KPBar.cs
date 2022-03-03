@@ -8,7 +8,7 @@ public class KPBar : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        knowledge.transform.localScale = new Vector3(0.5f, 1f);
+        knowledge.transform.localScale = new Vector3(1f, 1f);
     }
 
     public void SetKP(float kpNormalised)

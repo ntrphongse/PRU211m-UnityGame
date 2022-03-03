@@ -25,7 +25,7 @@ public class Lecturer : MonoBehaviour
     }
     public int MaxKp
     {
-        get { return Mathf.FloorToInt((Base.Defense * Level) / 100f) + 10; }
+        get { return Mathf.FloorToInt((Base.Defense * Level) / 100f) + 50; }
     }
 
     public bool TakeDamage(Answer answer, Lecturer answerer)
@@ -35,7 +35,7 @@ public class Lecturer : MonoBehaviour
         int damage = Mathf.FloorToInt(d * modifiers);
 
         KP -= damage;
-        if(KP <= 0)
+        if (KP <= 0)
         {
             KP = 0;
             return true;
@@ -46,8 +46,9 @@ public class Lecturer : MonoBehaviour
         }
     }
 
-    public string GetRandomQuestion()
+    public Answer GetRandomQuestion()
     {
-        return "What is 1 + 1";
+        return new Answer(new AnswerBase("2", "2", mobType.Regular, 10));
     }
 }
+
