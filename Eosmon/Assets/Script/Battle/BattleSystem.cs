@@ -49,7 +49,7 @@ public class BattleSystem : MonoBehaviour
         yield return new WaitForSeconds(1f);
 
         bool isFainted = enemy.Lecturer.TakeDamage(answer, player.Lecturer);
-        enemyHud.UpdateKP();
+        yield return enemyHud.UpdateKP();
 
         if (isFainted)
         {
@@ -66,10 +66,10 @@ public class BattleSystem : MonoBehaviour
         state = BattleState.EnemyMove;
         Answer question = enemy.Lecturer.GetRandomQuestion();
         playerHud.UpdateKP();
-        yield return dialogBox.TypeDialog($"Next question is...{question}");
+        yield return dialogBox.TypeDialog($"Next question is...{question.Base.Description}");
         yield return new WaitForSeconds(1f);
         bool isFainted = player.Lecturer.TakeDamage(question, player.Lecturer);
-        playerHud.UpdateKP();
+        yield return playerHud.UpdateKP();
 
         if (isFainted)
         {

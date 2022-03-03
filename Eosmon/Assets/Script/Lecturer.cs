@@ -48,7 +48,7 @@ public class Lecturer : MonoBehaviour
 
     public Answer GetRandomQuestion()
     {
-        return new Answer(new AnswerBase("2", "2", mobType.Regular, 10));
+        return new Answer(new AnswerBase("2", "What is 2 + 2?", mobType.Regular, 10));
     }
 }
 

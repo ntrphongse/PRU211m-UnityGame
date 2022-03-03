@@ -19,8 +19,8 @@ public class BattleHud : MonoBehaviour
         kpBar.SetKP(lecturer.KP / lecturer.MaxKp);
     }
 
-    public void UpdateKP()
+    public IEnumerator UpdateKP()
     {
-        kpBar.SetKP((float)_lecturer.KP / (float)_lecturer.MaxKp);
+        yield return kpBar.SetKpSmooth((float)_lecturer.KP / (float)_lecturer.MaxKp);
     }
 }

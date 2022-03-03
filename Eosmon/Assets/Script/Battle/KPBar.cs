@@ -15,4 +15,17 @@ public class KPBar : MonoBehaviour
     {
         knowledge.transform.localScale = new Vector3(kpNormalised, 1f);
     }
+
+    public IEnumerator SetKpSmooth(float newKp)
+    {
+        float curKp = knowledge.transform.localScale.x;
+        float changeAmt = curKp - newKp;
+        while(curKp - newKp > Mathf.Epsilon)
+        {
+            curKp -= changeAmt * Time.deltaTime;
+            knowledge.transform.localScale = new Vector3(curKp, 1f);
+            yield return null;
+        }
+        knowledge.transform.localScale = new Vector3(newKp, 1f);
+    }
 }
