@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed;
     public LayerMask solidObjects;
+    public LayerMask interactableLayer;
     private bool isMoving;
     private Vector2 input;
 
@@ -36,8 +37,14 @@ public class PlayerMovement : MonoBehaviour
             }
         }
         animator.SetBool("isMoving", isMoving);
-    }
 
+        if (input.GetKeyDown(KeyCode.Z)) Interact();
+    }
+    void Interact()
+    {
+        var facingDir = new Vector3(animator.GetFloat("moveX"), animator.GetFloat("moveY"));
+        var interactPos = transform.position + facingDir;
+    }
     IEnumerator Move(Vector3 targetPos)
     {
         isMoving = true;
@@ -52,7 +59,7 @@ public class PlayerMovement : MonoBehaviour
 
     private bool IsWalkable(Vector3 targetPos)
     {
-        return !(Physics2D.OverlapCircle(targetPos, 0.3f, solidObjects) != null);
+        return !(Physics2D.OverlapCircle(targetPos, 0.3f,  solidObjects| interactableLayer) != null);
 
     }
 }
