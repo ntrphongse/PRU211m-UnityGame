@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 4c44468b22f9ddd4b951233b2a5200f2
   - enabled: 1
+    path: Assets/Scenes/ShoolYard.unity
+    guid: 045b1a1ec87a6684f8bf21ddc4dffe2a
+  - enabled: 1
+    path: Assets/Scenes/Room.unity
+    guid: e70e3ed53f10f68489992cf32701559a
+  - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}
