@@ -11,6 +11,7 @@ public class AnswerBase : ScriptableObject
     [SerializeField] mobType type;
     [SerializeField] int power;
 
+
     public AnswerBase(string name, string description, mobType type, int power)
     {
         this.name = name;

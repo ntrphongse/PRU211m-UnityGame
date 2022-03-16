@@ -9,17 +9,29 @@ public class BattleUnit : MonoBehaviour
     [SerializeField] MobBase _base;
     [SerializeField] int level;
     [SerializeField] bool isPlayerUnit;
+
+    Image image;
+
+    private void Awake()
+    {
+        image = GetComponent<Image>();
+    }
     public Lecturer Lecturer { get; set; }
     public void Setup()
     {
         Lecturer = new Lecturer(_base, level);
         if (isPlayerUnit)
         {
-            GetComponent<Image>().sprite = Lecturer.Base.FrontSprite;
+            image.sprite = Lecturer.Base.FrontSprite;
         }
         else
         {
-            GetComponent<Image>().sprite = Lecturer.Base.BackSprite;
+            image.sprite = Lecturer.Base.BackSprite;
         }
+    }
+
+    public void PlayEnterAnimation()
+    {
+
     }
 }
