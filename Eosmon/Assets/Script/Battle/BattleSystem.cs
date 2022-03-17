@@ -1,28 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
-using UnityEngine.UI;
-
 public enum BattleState { Start, PlayerAction, PLayerMove, EnemyMove, Busy }
 
 public class BattleSystem : MonoBehaviour
 {
-    public TextAsset jsonFile;
-
     [SerializeField] BattleUnit player;
     [SerializeField] BattleHud playerHud;
     [SerializeField] BattleUnit enemy;
     [SerializeField] BattleHud enemyHud;
     [SerializeField] BattleDialogBox dialogBox;
-    [SerializeField] QuestionBase q;
-
-    public event Action<bool> OnBattleOver;
 
     BattleState state;
     int currentAction;
     int currentMove;
-    public void StartBattle()
+    private void Start()
     {
         StartCoroutine(SetupBattle());
     }
@@ -33,65 +25,35 @@ public class BattleSystem : MonoBehaviour
         enemy.Setup();
         playerHud.SetData(player.Lecturer);
         enemyHud.SetData(enemy.Lecturer);
+        var answers = new List<Answer>();
+
+        answers.Add(new Answer(new AnswerBase("1", "", mobType.Regular, 5)));
+        answers.Add(new Answer(new AnswerBase("2", "", mobType.Regular, 5)));
+        answers.Add(new Answer(new AnswerBase("3", "", mobType.Regular, 5)));
+        answers.Add(new Answer(new AnswerBase("4", "", mobType.Regular, 5)));
+
+        dialogBox.setMoveNames(answers);
 
         yield return dialogBox.TypeDialog($"The lecturer {enemy.Lecturer.Base.Name} appeared.");
         yield return new WaitForSeconds(1f);
-        q = enemy.Lecturer.GetRandomQuestion(jsonFile);
-        yield return dialogBox.TypeDialog($"First question is...{q.Question}");
-        yield return new WaitForSeconds(4f);
-        dialogBox.setMoveNames(q.SuggestedAnswers);
 
         PlayerAction();
     }
 
-    IEnumerator PerformPlayerMove(int currentMove)
+    IEnumerator PerformPlayerMove()
     {
-        bool correct = false;
-        switch (q.CorrectAnswer)
-        {
-            case "A": if (currentMove + 1 == 1) correct = true; break;
-            case "B": if (currentMove + 1 == 2) correct = true; break;
-            case "C": if (currentMove + 1 == 3) correct = true; break;
-            case "D": if (currentMove + 1 == 4) correct = true; break;
-        }
         state = BattleState.Busy;
-        yield return dialogBox.TypeDialog($"Answer is...{q.CorrectAnswer}");
+        Answer answer = new Answer(new AnswerBase("Test", "Test answer", mobType.Regular, 10));
+        yield return dialogBox.TypeDialog($"Answer is...{answer.Base.Description}");
+
         yield return new WaitForSeconds(1f);
 
+        bool isFainted = enemy.Lecturer.TakeDamage(answer, player.Lecturer);
+        yield return enemyHud.UpdateKP();
 
-        bool isLecturerFainted = false;
-        bool isPlayerFainted = false;
-        if (correct)
-        {
-            player.PlayAttacAnimation();
-            enemy.PlayHitAnimation();
-            isLecturerFainted = enemy.Lecturer.TakeDamage(q, player.Lecturer);
-            yield return enemyHud.UpdateKP();
-
-        }
-        else
-        {
-            enemy.PlayAttacAnimation();
-            player.PlayHitAnimation();
-            isPlayerFainted = player.Lecturer.TakeDamage(q, player.Lecturer);
-            yield return playerHud.UpdateKP();
-
-        }
-        if (isLecturerFainted)
+        if (isFainted)
         {
             yield return dialogBox.TypeDialog("You are worthy");
-            enemy.PLayFaintAnimation();
-
-            yield return new WaitForSeconds(2f);
-            OnBattleOver(true);
-        }
-        else if (isPlayerFainted)
-        {
-            yield return dialogBox.TypeDialog("You are not worthy");
-            player.PLayFaintAnimation();
-            yield return new WaitForSeconds(2f);
-            OnBattleOver(false);
-
         }
         else
         {
@@ -102,12 +64,21 @@ public class BattleSystem : MonoBehaviour
     IEnumerator EnemyMove()
     {
         state = BattleState.EnemyMove;
-        q = enemy.Lecturer.GetRandomQuestion(jsonFile);
-        yield return dialogBox.TypeDialog($"Next question is...{q.Question}");
-        yield return new WaitForSeconds(5f);
-        dialogBox.setMoveNames(q.SuggestedAnswers);
+        Answer question = enemy.Lecturer.GetRandomQuestion();
+        playerHud.UpdateKP();
+        yield return dialogBox.TypeDialog($"Next question is...{question.Base.Description}");
+        yield return new WaitForSeconds(1f);
+        bool isFainted = player.Lecturer.TakeDamage(question, player.Lecturer);
+        yield return playerHud.UpdateKP();
 
-        PlayerAction();
+        if (isFainted)
+        {
+            yield return dialogBox.TypeDialog("You are not worthy");
+        }
+        else
+        {
+            PlayerAction();
+        }
     }
 
     void PlayerAction()
@@ -120,13 +91,12 @@ public class BattleSystem : MonoBehaviour
     void PlayerMove()
     {
         state = BattleState.PLayerMove;
-
         dialogBox.EnabledActionSelector(false);
         dialogBox.EnableDialogText(false);
         dialogBox.EnabledMoveSelector(true);
     }
 
-    public void HandleUpdate()
+    private void Update()
     {
         if (state == BattleState.PlayerAction)
         {
@@ -175,18 +145,7 @@ public class BattleSystem : MonoBehaviour
         {
             dialogBox.EnabledMoveSelector(false);
             dialogBox.EnableDialogText(true);
-            StartCoroutine(PerformPlayerMove(currentMove));
-        }
-        if (Input.GetKeyDown(KeyCode.X))
-        {
-            dialogBox.SetDialog(q.Question);
-            dialogBox.EnabledMoveSelector(false);
-            dialogBox.EnableDialogText(true);
-        }
-        if (Input.GetKeyUp(KeyCode.X))
-        {
-            dialogBox.EnableDialogText(false);
-            dialogBox.EnabledMoveSelector(true);
+            StartCoroutine(PerformPlayerMove());
         }
     }
 
