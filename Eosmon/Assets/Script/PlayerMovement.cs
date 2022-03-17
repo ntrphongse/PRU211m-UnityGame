@@ -39,6 +39,7 @@ public class PlayerMovement : MonoBehaviour
         animator.SetBool("isMoving", isMoving);
 
         if (Input.GetKeyDown(KeyCode.Z)) Interact();
+
     }
     void Interact()
     {
