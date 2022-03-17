@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -12,12 +13,23 @@ public class PlayerMovement : MonoBehaviour
 
     private Animator animator;
 
+    public event Action OnEncounter;
+
     private void Awake()
     {
         animator = GetComponent<Animator>();
     }
 
-    private void Update()
+    private void CheckEncounter()
+    {
+        if (UnityEngine.Random.Range(1, 10) < 5)
+        {
+            Debug.Log("owp");
+            OnEncounter();
+        }
+    }
+
+    public void HandleUpdate()
     {
         if (!isMoving)
         {

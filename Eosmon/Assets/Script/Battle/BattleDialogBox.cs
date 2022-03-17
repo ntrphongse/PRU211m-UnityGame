@@ -74,17 +74,16 @@ public class BattleDialogBox : MonoBehaviour
             }
         }
     }
-    public void setMoveNames(List<Answer> moves)
+    public void setMoveNames(SuggestedAnswers answers)
     {
-        for(int i = 0;i < moveText.Count; i++)
+        for (int i = 0; i < 4; i++)
         {
-            if (i < moves.Count)
+            switch (i)
             {
-                moveText[i].text = moves[i].Base.Name;
-            }
-            else
-            {
-                moveText[i].text = "-";
+                case 0: moveText[i].text = answers.A; break;
+                case 1: moveText[i].text = answers.B; break;
+                case 2: moveText[i].text = answers.C; break;
+                case 3: moveText[i].text = answers.D; break;
             }
         }
     }
