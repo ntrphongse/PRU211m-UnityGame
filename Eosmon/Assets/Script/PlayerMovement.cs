@@ -1,23 +1,36 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed;
     public LayerMask solidObjects;
     public LayerMask interactableLayer;
+
     private bool isMoving;
     private Vector2 input;
 
     private Animator animator;
+
+    public event Action OnEncounter;
 
     private void Awake()
     {
         animator = GetComponent<Animator>();
     }
 
-    private void Update()
+    private void CheckEncounter()
+    {
+        if (UnityEngine.Random.Range(1, 10) < 5)
+        {
+            Debug.Log("owp");
+            OnEncounter();
+        }
+    }
+
+    public void HandleUpdate()
     {
         if (!isMoving)
         {
@@ -46,15 +59,14 @@ public class PlayerMovement : MonoBehaviour
         var facingDir = new Vector3(animator.GetFloat("moveX"), animator.GetFloat("moveY"));
         var interactPos = transform.position + facingDir;
         Debug.DrawLine(transform.position, interactPos, Color.green, 0.5f);
-        var collider= Physics2D.OverlapCircle(interactPos, 0.3f, interactableLayer);
-        if(collider != null)
+        var collider = Physics2D.OverlapCircle(interactPos, 0.3f, interactableLayer);
+        if (collider != null)
         {
             collider.GetComponent<Interactable>()?.Interact();
         }
-    
-    
+
     }
-    IEnumerator Move(Vector3 targetPos)
+        IEnumerator Move(Vector3 targetPos)
     {
         isMoving = true;
         while ((targetPos - transform.position).sqrMagnitude > Mathf.Epsilon)
@@ -68,7 +80,7 @@ public class PlayerMovement : MonoBehaviour
 
     private bool IsWalkable(Vector3 targetPos)
     {
-        return !(Physics2D.OverlapCircle(targetPos, 0.3f,  solidObjects| interactableLayer) != null);
+        return !(Physics2D.OverlapCircle(targetPos, 0.3f, solidObjects | interactableLayer) != null);
 
     }
 }

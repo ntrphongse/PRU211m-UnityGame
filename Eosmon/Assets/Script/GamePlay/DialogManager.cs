@@ -25,13 +25,8 @@ public class DialogManager : MonoBehaviour
 
     Dialog dialog;
     int currentLine = 0;
-    bool isTyping=true;
+    bool isTyping;
 
-    private void Start()
-    {
-        OnShowDialog += () => { state = DialogState.Dialog; };
-        OnCloseDialog += () => { if(state==DialogState.Dialog) state = DialogState.FreeRoam; };
-    }
 
     public IEnumerator ShowDialog(Dialog dialog) 
     {
@@ -41,15 +36,7 @@ public class DialogManager : MonoBehaviour
         dialogBox.SetActive(true);
         StartCoroutine(TypeDialog(dialog.Lines[0]));
     }
-
-    private void Update()
-    {
-        if (state == DialogState.Dialog)
-        {
-            HandleUpdate();
-        }
-        
-    }
+    
 
     public void HandleUpdate()
     {
