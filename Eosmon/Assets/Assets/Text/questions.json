@@ -1,0 +1,337 @@
+[
+  
+  {
+    "Question": "A ________has a name, a single value, and optional attributes such as a comment, path and domain qualifiers, a maximum age, and a version number.",
+    "SuggestedAnswers": {
+      "A": "Cookie",
+      "B": "Session",
+      "C": "Request",
+      "D": "Response"
+    },
+    "CorrectAnswer": "A"
+  },
+  
+  
+  {
+    "Question": "Which of the following diagram is a Structural diagram",
+    "SuggestedAnswers": {
+      "A": "Class diagram",
+      "B": "Class diagram",
+      "C": "Use-case diagram",
+      "D": "Sequence diagram"
+    },
+    "CorrectAnswer": "A"
+  },
+  {
+    "Question": "Which is NOT a structure which can be described in a software architecture?",
+    "SuggestedAnswers": {
+      "A": "Operation structure",
+      "B": "Static structure",
+      "C": "Deployment structure",
+      "D": "Management structure"
+    },
+    "CorrectAnswer": "A"
+  },
+  {
+    "Question": "We use the __________________________ class when processing input in Unity",
+    "SuggestedAnswers": {
+      "A": "Input",
+      "B": "Keyboard",
+      "C": "\nInputManager",
+      "D": "Mouse"
+    },
+    "CorrectAnswer": "A"
+  },
+ 
+  {
+    "Question": "When we declare a variable, we need to provide a __________ and a variable name",
+    "SuggestedAnswers": {
+      "A": "assignment statement",
+      "B": "data type",
+      "C": "\nvalue type",
+      "D": "\nclass name"
+    },
+    "CorrectAnswer": "B"
+  },
+  {
+    "Question": "The most appropriate way to provide external consumer access to the state of an object is through",
+    "SuggestedAnswers": {
+      "A": "fields",
+      "B": "properties",
+      "C": "identities",
+      "D": "methods"
+    },
+    "CorrectAnswer": "B"
+  },
+  {
+    "Question": "The most appropriate way to provide external consumer access to the behavior of an object is through",
+    "SuggestedAnswers": {
+      "A": "methods",
+      "B": "fields",
+      "C": "properties",
+      "D": "identities"
+    },
+    "CorrectAnswer": "A"
+  },
+  {
+    "Question": "When we call a static function, we start with the _____________ name",
+    "SuggestedAnswers": {
+      "A": "object",
+      "B": "field",
+      "C": "class",
+      "D": "variable"
+    },
+    "CorrectAnswer": "C"
+  },
+  {
+    "Question": "Entities in a Unity scene are called",
+    "SuggestedAnswers": {
+      "A": "Game Objects",
+      "B": "scripts",
+      "C": "Bob",
+      "D": "sprites"
+    },
+    "CorrectAnswer": "A"
+  },
+  
+  {
+    "Question": "Which of the following is a principle of Object Oriented methodology?",
+    "SuggestedAnswers": {
+      "A": "Exchangeability",
+      "B": "Polymorphism",
+      "C": "Interactivity",
+      "D": "Concurrency"
+    },
+    "CorrectAnswer": "B"
+  },
+  {
+    "Question": "Which of the following are not benefits of pipe and filter?",
+    "SuggestedAnswers": {
+      "A": "Concurrency",
+      "B": "Incremental",
+      "C": "Exchangeable",
+      "D": "Interactive"
+    },
+    "CorrectAnswer": "D"
+  },
+  {
+    "Question": "Which is NOT the way to make the data flow in Pipe and Filter architecture?",
+    "SuggestedAnswers": {
+      "A": "Pull only",
+      "B": "Push only",
+      "C": "Leave data in a center repository",
+      "D": "Pull/Push"
+    },
+    "CorrectAnswer": "C"
+  },
+  {
+    "Question": "Which of the following is one of the benefits of asynchronous architecture?",
+    "SuggestedAnswers": {
+      "A": "Multiple indepedent agents",
+      "B": "Loose coupling of modules",
+      "C": "Multiple Views",
+      "D": "FIexrble GUI interfaces"
+    },
+    "CorrectAnswer": "B"
+  },
+ 
+  {
+    "Question": "Which of the following attribute related to time and space?",
+    "SuggestedAnswers": {
+      "A": "Efficiency",
+      "B": "Portability",
+      "C": "Reliability",
+      "D": "Functionality"
+    },
+    "CorrectAnswer": "A"
+  },
+  {
+    "Question": "Which of the following is NOT a benefit of the MVC architecture?",
+    "SuggestedAnswers": {
+      "A": "Supports multiple independent agents",
+      "B": "Provide flexible GUI interfaces",
+      "C": "Support Multiple views",
+      "D": "Support loose data coupling"
+    },
+    "CorrectAnswer": "A"
+  },
+  {
+    "Question": "Which of the following is the main motivation of Component-based architecture?",
+    "SuggestedAnswers": {
+      "A": "Component reliability",
+      "B": "Component usability",
+      "C": "Component reusability",
+      "D": "Component security"
+    },
+    "CorrectAnswer": "C"
+  },
+  {
+    "Question": "Which of the following is NOT a benefit of Component architecture",
+    "SuggestedAnswers": {
+      "A": "Productivity software development",
+      "B": "Reusability",
+      "C": "System Evolution",
+      "D": "Performance"
+    },
+    "CorrectAnswer": "D"
+  },
+  {
+    "Question": "Which is an advantage of Client-Server Architecture?",
+    "SuggestedAnswers": {
+      "A": "Server availability is a good point",
+      "B": "Good at Testability and scalability",
+      "C": "Easy for Security",
+      "D": "Reusability of server components."
+    },
+    "CorrectAnswer": "D"
+  },
+  {
+    "Question": "Which of the following attribute related to error tolerance and availability?",
+    "SuggestedAnswers": {
+      "A": "Functionality",
+      "B": "Reliability",
+      "C": "Portability",
+      "D": "Efficiency"
+    },
+    "CorrectAnswer": "B"
+  },
+  {
+    "Question": "Which of the following attribute related to hardware independence and installability?",
+    "SuggestedAnswers": {
+      "A": "Reliability",
+      "B": "Functionality",
+      "C": "Portability",
+      "D": "Efficiency"
+    },
+    "CorrectAnswer": "C"
+  },
+  {
+    "Question": "Which of the followings is a style of distributed architecture?",
+    "SuggestedAnswers": {
+      "A": "Service Oriented architecture",
+      "B": "Repository architecture",
+      "C": "Black-board architecture",
+      "D": "Virtual Machine architecture"
+    },
+    "CorrectAnswer": "A"
+  },
+  {
+    "Question": "Which of the following is NOT the benefit of Multi-tier architecture style?",
+    "SuggestedAnswers": {
+      "A": "Scalability",
+      "B": "Reiiabiiity",
+      "C": "Availability",
+      "D": "Load balancing"
+    },
+    "CorrectAnswer": "D"
+  },
+  {
+    "Question": "Which of the following is a test type?",
+    "SuggestedAnswers": {
+      "A": "Component testing",
+      "B": "Functional testing",
+      "C": "System testing",
+      "D": "System testing"
+    },
+    "CorrectAnswer": "B"
+  },
+  {
+    "Question": "Which of the following is a non-functional quality characteristic?",
+    "SuggestedAnswers": {
+      "A": "Feasibility",
+      "B": "Usability",
+      "C": "Maintenance",
+      "D": "Regression"
+    },
+    "CorrectAnswer": "B"
+  },
+  
+  {
+    "Question": "What is method of form to transmit the form data back to web server for processing?",
+    "SuggestedAnswers": {
+      "A": "Get and Postback",
+      "B": "Postback and Receive",
+      "C": "Receive and Post",
+      "D": "Post and Get"
+    },
+    "CorrectAnswer": "D"
+  },
+  {
+    "Question": "A .Net a programming language (C#, VB.NET, J# etc.) does not compile into executable code; instead it complies into an intermediate code called _______",
+    "SuggestedAnswers": {
+      "A": "VB#",
+      "B": "C#",
+      "C": "Java#",
+      "D": "MSIL"
+    },
+    "CorrectAnswer": "D"
+  },
+  
+  {
+    "Question": "A ________has a name, a single value, and optional attributes such as a comment, path and domain qualifiers, a maximum age, and a version number.",
+    "SuggestedAnswers": {
+      "A": "Cookie",
+      "B": "Session",
+      "C": "Request",
+      "D": "Response"
+    },
+    "CorrectAnswer": "A"
+  },
+  
+  {
+    "Question": "How many HTTP Methods are there? ",
+    "SuggestedAnswers": {
+      "A": "4",
+      "B": "5",
+      "C": "6",
+      "D": "7"
+    },
+    "CorrectAnswer": "D"
+  },
+  {
+    "Question": "Who would USUALLY perform debugging activities",
+    "SuggestedAnswers": {
+      "A": "Developers.",
+      "B": "Developers.",
+      "C": " Testers.",
+      "D": "Incident Managers."
+    },
+    "CorrectAnswer": "A"
+  },
+  {
+    "Question": "Which of the following defines the expected results of a test",
+    "SuggestedAnswers": {
+      "A": "Test case specification.",
+      "B": "Test design specification.",
+      "C": "Test procedure specification.",
+      "D": "Test results."
+    },
+    "CorrectAnswer": "A"
+  },
+  
+  {
+    "Question": "Testing performed by product developers at their own locations.",
+    "SuggestedAnswers": {
+      "A": "Usability defects found by customers",
+      "B": "Defects in infrequently used functionality",
+      "C": "Defects that were detected early",
+      "D": "Minor defects that were found by users"
+    },
+    "CorrectAnswer": "C"
+  },
+  
+  
+ 
+  {
+    "Question": "Which type of test design techniques does the following statement best describe a procedure\nto derive test cases based on the specification of a component",
+    "SuggestedAnswers": {
+      "A": "Black Box Techniques.",
+      "B": "White Box Techniques.",
+      "C": "Glass Box Techniques.",
+      "D": "Experience Based Techniques."
+    },
+    "CorrectAnswer": "B"
+  },
+  
+  
+]
