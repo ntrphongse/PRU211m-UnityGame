@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
+using UnityEngine.UI;
+
 public enum BattleState { Start, PlayerAction, PLayerMove, EnemyMove, Busy }
 
 public class BattleSystem : MonoBehaviour
@@ -14,11 +17,12 @@ public class BattleSystem : MonoBehaviour
     [SerializeField] BattleDialogBox dialogBox;
     [SerializeField] QuestionBase q;
 
+    public event Action<bool> OnBattleOver;
 
     BattleState state;
     int currentAction;
     int currentMove;
-    private void Start()
+    public void StartBattle()
     {
         StartCoroutine(SetupBattle());
     }
@@ -53,16 +57,22 @@ public class BattleSystem : MonoBehaviour
         state = BattleState.Busy;
         yield return dialogBox.TypeDialog($"Answer is...{q.CorrectAnswer}");
         yield return new WaitForSeconds(1f);
+
+
         bool isLecturerFainted = false;
         bool isPlayerFainted = false;
         if (correct)
         {
+            player.PlayAttacAnimation();
+            enemy.PlayHitAnimation();
             isLecturerFainted = enemy.Lecturer.TakeDamage(q, player.Lecturer);
             yield return enemyHud.UpdateKP();
 
         }
         else
         {
+            enemy.PlayAttacAnimation();
+            player.PlayHitAnimation();
             isPlayerFainted = player.Lecturer.TakeDamage(q, player.Lecturer);
             yield return playerHud.UpdateKP();
 
@@ -70,10 +80,18 @@ public class BattleSystem : MonoBehaviour
         if (isLecturerFainted)
         {
             yield return dialogBox.TypeDialog("You are worthy");
+            enemy.PLayFaintAnimation();
+
+            yield return new WaitForSeconds(2f);
+            OnBattleOver(true);
         }
         else if (isPlayerFainted)
         {
             yield return dialogBox.TypeDialog("You are not worthy");
+            player.PLayFaintAnimation();
+            yield return new WaitForSeconds(2f);
+            OnBattleOver(false);
+
         }
         else
         {
@@ -108,7 +126,7 @@ public class BattleSystem : MonoBehaviour
         dialogBox.EnabledMoveSelector(true);
     }
 
-    private void Update()
+    public void HandleUpdate()
     {
         if (state == BattleState.PlayerAction)
         {
@@ -158,6 +176,17 @@ public class BattleSystem : MonoBehaviour
             dialogBox.EnabledMoveSelector(false);
             dialogBox.EnableDialogText(true);
             StartCoroutine(PerformPlayerMove(currentMove));
+        }
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            dialogBox.SetDialog(q.Question);
+            dialogBox.EnabledMoveSelector(false);
+            dialogBox.EnableDialogText(true);
+        }
+        if (Input.GetKeyUp(KeyCode.X))
+        {
+            dialogBox.EnableDialogText(false);
+            dialogBox.EnabledMoveSelector(true);
         }
     }
 
