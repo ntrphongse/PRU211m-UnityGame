@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mob_name: Owo
   description: 
-  frontSprite: {fileID: -128083769461270964, guid: ad2444eeca406ce47a372b1cdb6a8287, type: 3}
-  backSprite: {fileID: -128083769461270964, guid: ad2444eeca406ce47a372b1cdb6a8287, type: 3}
+  frontSprite: {fileID: 1370087335, guid: 2da60212ef5dcd74ba7c145765a06cab, type: 3}
+  backSprite: {fileID: -1346204795, guid: 2da60212ef5dcd74ba7c145765a06cab, type: 3}
   maxKp: 0
   attack: 0
   defense: 0

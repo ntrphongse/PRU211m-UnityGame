@@ -66,7 +66,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
     }
-        IEnumerator Move(Vector3 targetPos)
+    IEnumerator Move(Vector3 targetPos)
     {
         isMoving = true;
         while ((targetPos - transform.position).sqrMagnitude > Mathf.Epsilon)
@@ -82,5 +82,10 @@ public class PlayerMovement : MonoBehaviour
     {
         return !(Physics2D.OverlapCircle(targetPos, 0.3f, solidObjects | interactableLayer) != null);
 
+    }
+
+    public Sprite Sprite
+    {
+        get => Sprite;
     }
 }
