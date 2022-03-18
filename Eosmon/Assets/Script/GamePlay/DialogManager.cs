@@ -4,7 +4,6 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 
-public enum DialogState { Start, PlayerAction, PLayerMove, EnemyMove, Busy, Dialog, FreeRoam }
 
 
 public class DialogManager : MonoBehaviour
@@ -12,8 +11,6 @@ public class DialogManager : MonoBehaviour
     [SerializeField] GameObject dialogBox;
     [SerializeField] Text dialogText;
     [SerializeField] int letterPerSecond;
-
-    DialogState state;
 
     public static DialogManager Instance { get; private set; }
     private void Awake()

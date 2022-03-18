@@ -16,14 +16,15 @@ public class NPCController : MonoBehaviour, Interactable
 
         // Retrieve the name of this scene.
         string sceneName = currentScene.name;
-        if (sceneName == "SchoolYard")
+        
+        if (sceneName == "Room")
+        {
+            gameController.StartBattle();
+        }
+        else
         {
             Debug.Log("NPC interact!");
             StartCoroutine(DialogManager.Instance.ShowDialog(dialog));
-        }
-        else if (sceneName == "Room")
-        {
-            gameController.StartBattle();
         }
 
     }
