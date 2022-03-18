@@ -645,6 +645,7 @@ MonoBehaviour:
     lines:
     - Hillo :>
     - Welcome to the yard, enjoy wandering around!
+  gameController: {fileID: 673789539}
 --- !u!1 &406731353
 GameObject:
   m_ObjectHideFlags: 0
