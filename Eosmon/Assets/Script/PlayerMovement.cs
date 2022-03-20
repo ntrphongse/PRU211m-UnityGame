@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask interactableLayer;
 
     private bool isMoving;
+    private bool isDead;
+
     private Vector2 input;
 
     private Animator animator;
@@ -25,33 +28,41 @@ public class PlayerMovement : MonoBehaviour
     {
         if (UnityEngine.Random.Range(1, 10) < 5)
         {
-            Debug.Log("owp");
             OnEncounter();
         }
     }
 
     public void HandleUpdate()
     {
-        if (!isMoving)
+        if (SceneManager.GetActiveScene().name == "GameOver")
         {
-            input.x = Input.GetAxisRaw("Horizontal");
-            input.y = Input.GetAxisRaw("Vertical");
-            if (input.x != 0) input.y = 0;
-            if (input != Vector2.zero)
-            {
-                animator.SetFloat("moveX", input.x);
-                animator.SetFloat("moveY", input.y);
-
-                var targetPos = transform.position;
-                targetPos.x += input.x;
-                targetPos.y += input.y;
-                if (IsWalkable(targetPos))
-                    StartCoroutine(Move(targetPos));
-            }
+            animator.SetBool("IsDead", true);
         }
-        animator.SetBool("isMoving", isMoving);
+        else
+        {
 
-        if (Input.GetKeyDown(KeyCode.Z)) Interact();
+            if (!isMoving)
+            {
+                input.x = Input.GetAxisRaw("Horizontal");
+                input.y = Input.GetAxisRaw("Vertical");
+                if (input.x != 0) input.y = 0;
+                if (input != Vector2.zero)
+                {
+                    animator.SetFloat("moveX", input.x);
+                    animator.SetFloat("moveY", input.y);
+
+                    var targetPos = transform.position;
+                    targetPos.x += input.x;
+                    targetPos.y += input.y;
+                    if (IsWalkable(targetPos))
+                        StartCoroutine(Move(targetPos));
+                }
+            }
+            animator.SetBool("isMoving", isMoving);
+            if (Input.GetKeyDown(KeyCode.Z)) Interact();
+
+        }
+
 
     }
     void Interact()
@@ -77,7 +88,6 @@ public class PlayerMovement : MonoBehaviour
         transform.position = targetPos;
         isMoving = false;
     }
-
     private bool IsWalkable(Vector3 targetPos)
     {
         return !(Physics2D.OverlapCircle(targetPos, 0.3f, solidObjects | interactableLayer) != null);
