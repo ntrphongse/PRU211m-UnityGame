@@ -32,7 +32,6 @@ public class BattleSystem : MonoBehaviour
 
     public IEnumerator SetupBattle()
     {
-        OnWiningGame(false);
 
         player.Setup();
         enemy.Setup();
