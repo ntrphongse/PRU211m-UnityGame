@@ -488,7 +488,7 @@ RectTransform:
   m_Children:
   - {fileID: 629747496}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -627,7 +627,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &303002442
 MonoBehaviour:
@@ -1041,7 +1041,7 @@ MonoBehaviour:
   playerController: {fileID: 1976773059}
   battleSystem: {fileID: 1342591262}
   worldCam: {fileID: 2022850266}
-  battleCam: {fileID: 0}
+  battleCam: {fileID: 1892789064}
 --- !u!4 &673789540
 Transform:
   m_ObjectHideFlags: 0
@@ -11271,6 +11271,7 @@ MonoBehaviour:
   enemyHud: {fileID: 71594892}
   dialogBox: {fileID: 1486893405}
   q: {fileID: 0}
+  gameController: {fileID: 0}
 --- !u!4 &1342591263
 Transform:
   m_ObjectHideFlags: 0
@@ -19575,7 +19576,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 66d5563260aac394c8d41a32045310bc, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
@@ -19907,7 +19908,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1568491128
 GameObject:
@@ -20742,7 +20743,6 @@ MonoBehaviour:
   interactableLayer:
     serializedVersion: 2
     m_Bits: 64
-  walkSound: {fileID: 0}
 --- !u!212 &1976773060
 SpriteRenderer:
   m_ObjectHideFlags: 0
