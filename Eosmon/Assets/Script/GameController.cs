@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public enum GameState { FreeRoam, Battle, Dialog }
+public enum GameState { FreeRoam, Battle, Dialog, Died, Finished }
 public class GameController : MonoBehaviour
 {
     [SerializeField] PlayerMovement playerController;
@@ -15,18 +16,36 @@ public class GameController : MonoBehaviour
     private void Start()
     {
         playerController.OnEncounter += StartBattle;
+        battleSystem.OnWiningGame += EndGame;
         battleSystem.OnBattleOver += EndBattle;
-        DialogManager.Instance.OnShowDialog += () => { state = GameState.Dialog; };
-        DialogManager.Instance.OnCloseDialog += () => { if (state == GameState.Dialog) state = GameState.FreeRoam; };
+        if (DialogManager.Instance != null)
+        {
+            DialogManager.Instance.OnShowDialog += () => { state = GameState.Dialog; };
+            DialogManager.Instance.OnCloseDialog += () => { if (state == GameState.Dialog) state = GameState.FreeRoam; };
+        }
+    }
+
+    void EndGame(bool won)
+    {
+        if (won)
+        {
+
+        }
+        else
+        {
+            SceneManager.LoadScene("GameOver", LoadSceneMode.Single);
+        }
     }
 
     void EndBattle(bool won)
     {
-        state = GameState.FreeRoam;
-        battleSystem.gameObject.SetActive(false);
-        worldCam.gameObject.SetActive(true);
-        battleCam.gameObject.SetActive(false);
-
+        if (won)
+        {
+            state = GameState.FreeRoam;
+            battleSystem.gameObject.SetActive(false);
+            worldCam.gameObject.SetActive(true);
+            battleCam.gameObject.SetActive(false);
+        }
     }
 
     public void StartBattle()
@@ -35,7 +54,6 @@ public class GameController : MonoBehaviour
         battleSystem.gameObject.SetActive(true);
         worldCam.gameObject.SetActive(false);
         battleCam.gameObject.SetActive(true);
-
         battleSystem.StartBattle();
     }
 
@@ -43,11 +61,16 @@ public class GameController : MonoBehaviour
     {
         if (state == GameState.FreeRoam)
         {
+            worldCam.gameObject.SetActive(true);
+            battleCam.gameObject.SetActive(false);
             playerController.HandleUpdate();
         }
         else if (state == GameState.Dialog)
         {
             DialogManager.Instance.HandleUpdate();
+        }
+        else if (state == GameState.Died)
+        {
         }
         else
         {
