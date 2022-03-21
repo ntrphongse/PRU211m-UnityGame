@@ -645,7 +645,7 @@ MonoBehaviour:
     lines:
     - Hillo :>
     - Welcome to the yard, enjoy wandering around!
-  gameController: {fileID: 0}
+  gameController: {fileID: 673789539}
 --- !u!1 &406731353
 GameObject:
   m_ObjectHideFlags: 0
@@ -1041,7 +1041,7 @@ MonoBehaviour:
   playerController: {fileID: 1976773059}
   battleSystem: {fileID: 1342591262}
   worldCam: {fileID: 2022850266}
-  battleCam: {fileID: 1892789064}
+  battleCam: {fileID: 0}
 --- !u!4 &673789540
 Transform:
   m_ObjectHideFlags: 0
@@ -11271,7 +11271,6 @@ MonoBehaviour:
   enemyHud: {fileID: 71594892}
   dialogBox: {fileID: 1486893405}
   q: {fileID: 0}
-  gameController: {fileID: 0}
 --- !u!4 &1342591263
 Transform:
   m_ObjectHideFlags: 0
