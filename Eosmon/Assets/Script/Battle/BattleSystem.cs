@@ -16,8 +16,11 @@ public class BattleSystem : MonoBehaviour
     [SerializeField] BattleHud enemyHud;
     [SerializeField] BattleDialogBox dialogBox;
     [SerializeField] QuestionBase q;
+    [SerializeField] GameController gameController;
 
     public event Action<bool> OnBattleOver;
+    public event Action<bool> OnWiningGame;
+
 
     BattleState state;
     int currentAction;
@@ -29,6 +32,7 @@ public class BattleSystem : MonoBehaviour
 
     public IEnumerator SetupBattle()
     {
+
         player.Setup();
         enemy.Setup();
         playerHud.SetData(player.Lecturer);
@@ -38,7 +42,7 @@ public class BattleSystem : MonoBehaviour
         yield return new WaitForSeconds(1f);
         q = enemy.Lecturer.GetRandomQuestion(jsonFile);
         yield return dialogBox.TypeDialog($"First question is...{q.Question}");
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(3f);
         dialogBox.setMoveNames(q.SuggestedAnswers);
 
         PlayerAction();
@@ -57,7 +61,6 @@ public class BattleSystem : MonoBehaviour
         state = BattleState.Busy;
         yield return dialogBox.TypeDialog($"Answer is...{q.CorrectAnswer}");
         yield return new WaitForSeconds(1f);
-
 
         bool isLecturerFainted = false;
         bool isPlayerFainted = false;
@@ -81,7 +84,6 @@ public class BattleSystem : MonoBehaviour
         {
             yield return dialogBox.TypeDialog("You are worthy");
             enemy.PLayFaintAnimation();
-
             yield return new WaitForSeconds(2f);
             OnBattleOver(true);
         }
@@ -91,7 +93,7 @@ public class BattleSystem : MonoBehaviour
             player.PLayFaintAnimation();
             yield return new WaitForSeconds(2f);
             OnBattleOver(false);
-
+            OnWiningGame(false);
         }
         else
         {
@@ -104,7 +106,7 @@ public class BattleSystem : MonoBehaviour
         state = BattleState.EnemyMove;
         q = enemy.Lecturer.GetRandomQuestion(jsonFile);
         yield return dialogBox.TypeDialog($"Next question is...{q.Question}");
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(3f);
         dialogBox.setMoveNames(q.SuggestedAnswers);
 
         PlayerAction();
