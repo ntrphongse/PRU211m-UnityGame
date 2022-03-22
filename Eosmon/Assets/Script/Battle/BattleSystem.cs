@@ -89,6 +89,7 @@ public class BattleSystem : MonoBehaviour
             enemy.PLayFaintAnimation();
             yield return new WaitForSeconds(2f);
             OnBattleOver(true);
+            OnWiningGame(true);
         }
         else if (isPlayerFainted)
         {

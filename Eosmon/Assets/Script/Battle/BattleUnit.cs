@@ -11,6 +11,8 @@ public class BattleUnit : MonoBehaviour
     [SerializeField] int level;
     [SerializeField] bool isPlayerUnit;
 
+    [SerializeField] AudioSource hitSound;
+
     Image image;
     Vector3 originalPos;
     Color ogColor;
@@ -21,7 +23,9 @@ public class BattleUnit : MonoBehaviour
         originalPos = image.transform.localPosition;
         ogColor = image.color;
     }
+
     public Lecturer Lecturer { get; set; }
+
     public void Setup()
     {
         Lecturer = new Lecturer(_base, level);
@@ -68,6 +72,7 @@ public class BattleUnit : MonoBehaviour
     public void PlayHitAnimation()
     {
         var seq = DOTween.Sequence();
+        hitSound.Play();
         seq.Append(image.DOColor(Color.gray, 0.1f));
         seq.Append(image.DOColor(ogColor, 0.1f));
     }

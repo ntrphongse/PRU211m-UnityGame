@@ -20,7 +20,13 @@ public class SceneTransition : MonoBehaviour
                          collision.transform.position.y - 1f
                          );
                     break;
-                case 5:
+                case 7:
+                    SavedPositionManager.savedPositions = new Vector2(
+                         collision.transform.position.x,
+                         collision.transform.position.y - 1f
+                         );
+                    break;
+                default:
                     SavedPositionManager.savedPositions = new Vector2(
                          collision.transform.position.x,
                          collision.transform.position.y - 1f

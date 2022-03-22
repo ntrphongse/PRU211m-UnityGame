@@ -8,13 +8,25 @@ public class Menu : MonoBehaviour
     IEnumerator WaitASecond(string type)
     {
         yield return new WaitForSeconds(1f);
+        GameObject obj = GameObject.Find("BackgroundAudioMenu");
         switch (type)
         {
             case "play":
+                Destroy(obj);
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
                 break;
             case "main_menu":
                 SceneManager.LoadScene(0);
+                break;
+            case "room":
+                SceneManager.LoadScene("Room");
+                break;
+            case "yard":
+                SceneManager.LoadScene("ShoolYard");
+                break;
+            case "options":
+                DontDestroyOnLoad(obj);
+                SceneManager.LoadScene("Options");
                 break;
             case "exit":
                 Application.Quit();
@@ -25,6 +37,21 @@ public class Menu : MonoBehaviour
     public void Play()
     {
         StartCoroutine(WaitASecond("play"));
+    }
+
+    public void Options()
+    {
+        StartCoroutine(WaitASecond("options"));
+    }
+
+    public void BackToRoom()
+    {
+        StartCoroutine(WaitASecond("room"));
+    }
+
+    public void BackToYard()
+    {
+        StartCoroutine(WaitASecond("yard"));
     }
 
     public void BackToMainMenu()

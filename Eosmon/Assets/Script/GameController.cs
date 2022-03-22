@@ -45,7 +45,7 @@ public class GameController : MonoBehaviour
     {
         if (won)
         {
-
+            SceneManager.LoadScene("Victory", LoadSceneMode.Single);
         }
         else
         {
