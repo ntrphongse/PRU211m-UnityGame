@@ -226,7 +226,7 @@ public class BattleSystem : MonoBehaviour
             }
             else if (currentAction == 1)
             {
-
+                StartCoroutine(HandleRun());
             }
 
         }
