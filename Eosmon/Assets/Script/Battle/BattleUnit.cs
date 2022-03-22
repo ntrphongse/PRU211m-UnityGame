@@ -13,6 +13,16 @@ public class BattleUnit : MonoBehaviour
 
     [SerializeField] AudioSource hitSound;
 
+    [SerializeField] Animator animator;
+    [SerializeField] AudioSource bossWalkingSound;
+
+    [SerializeField] Image background;
+
+
+    private string _name;
+    public void Update()
+    {
+    }
     Image image;
     Vector3 originalPos;
     Color ogColor;
@@ -26,9 +36,16 @@ public class BattleUnit : MonoBehaviour
 
     public Lecturer Lecturer { get; set; }
 
-    public void Setup()
+    public void Setup(string npcName)
     {
         Lecturer = new Lecturer(_base, level);
+        Lecturer.Base.SetName(npcName);
+        _name = npcName;
+        if (npcName == "01101100011010000110101101110000")
+        {
+            Lecturer.Level = 999;
+            Lecturer.Base.SetMaxKp(9999);
+        }
         if (isPlayerUnit)
         {
             image.sprite = Lecturer.Base.FrontSprite;
@@ -38,10 +55,15 @@ public class BattleUnit : MonoBehaviour
             image.sprite = Lecturer.Base.BackSprite;
         }
         image.color = ogColor;
-        PlayEnterAnimation();
+        PlayEnterAnimation(npcName);
+    }
+    private void stopBossWalking()
+    {
+        animator.SetBool("IsBossWalking", false);
+        bossWalkingSound.Stop();
     }
 
-    public void PlayEnterAnimation()
+    public void PlayEnterAnimation(string npcName)
     {
         if (isPlayerUnit)
         {
@@ -51,8 +73,16 @@ public class BattleUnit : MonoBehaviour
         {
             image.transform.localPosition = new Vector3(500f, originalPos.y);
         }
-
-        image.transform.DOLocalMoveX(originalPos.x, 1f);
+        if (npcName == "01101100011010000110101101110000")
+        {
+            bossWalkingSound.Play();
+            background.transform.DOShakePosition(15f, 7f);
+            image.transform.DOLocalMoveX(250f, 13f).OnComplete(stopBossWalking);
+        }
+        else
+        {
+            image.transform.DOLocalMoveX(originalPos.x, 1f);
+        }
     }
 
     public void PlayAttacAnimation()
@@ -64,9 +94,24 @@ public class BattleUnit : MonoBehaviour
         }
         else
         {
-            seq.Append(image.transform.DOLocalMoveX(originalPos.x - 50f, 0.25f));
+            if (_name == "01101100011010000110101101110000")
+            {
+                seq.Append(image.transform.DOLocalMoveX(250f - 50f, 0.25f));
+            }
+            else
+            {
+                seq.Append(image.transform.DOLocalMoveX(originalPos.x - 50f, 0.25f));
+            }
+
         }
-        seq.Append(image.transform.DOLocalMoveX(originalPos.x, 0.25f));
+        if (_name == "01101100011010000110101101110000")
+        {
+            seq.Append(image.transform.DOLocalMoveX(250f, 0.25f));
+        }
+        else
+        {
+            seq.Append(image.transform.DOLocalMoveX(originalPos.x, 0.25f));
+        }
     }
 
     public void PlayHitAnimation()
@@ -76,7 +121,18 @@ public class BattleUnit : MonoBehaviour
         seq.Append(image.DOColor(Color.gray, 0.1f));
         seq.Append(image.DOColor(ogColor, 0.1f));
     }
-
+    public void PlayHealAnimation()
+    {
+        var seq = DOTween.Sequence();
+        seq.Append(image.DOColor(Color.green, 0.1f));
+        seq.Append(image.DOColor(ogColor, 0.1f));
+        seq.Append(image.DOColor(Color.green, 0.1f));
+        seq.Append(image.DOColor(ogColor, 0.1f));
+        seq.Append(image.DOColor(Color.green, 0.1f));
+        seq.Append(image.DOColor(ogColor, 0.1f));
+        seq.Append(image.DOColor(Color.green, 0.1f));
+        seq.Append(image.DOColor(ogColor, 0.1f));
+    }
 
     public void PLayFaintAnimation()
     {

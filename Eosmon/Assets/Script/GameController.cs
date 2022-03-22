@@ -31,7 +31,6 @@ public class GameController : MonoBehaviour
                 music.Stop();
             }
         }
-        playerController.OnEncounter += StartBattle;
         battleSystem.OnWiningGame += EndGame;
         battleSystem.OnBattleOver += EndBattle;
         if (DialogManager.Instance != null)
@@ -77,14 +76,18 @@ public class GameController : MonoBehaviour
         SceneManager.LoadScene("ShoolYard");
     }
 
-    public void StartBattle()
+    public void StartBattle(string npcName)
     {
-        music.Play();
+        if (npcName != "BossNPC")
+        {
+            music.Play();
+        }
+        Debug.Log(npcName);
         state = GameState.Battle;
         battleSystem.gameObject.SetActive(true);
         worldCam.gameObject.SetActive(false);
         battleCam.gameObject.SetActive(true);
-        battleSystem.StartBattle();
+        battleSystem.StartBattle(npcName);
     }
 
     public void MuteMusic()

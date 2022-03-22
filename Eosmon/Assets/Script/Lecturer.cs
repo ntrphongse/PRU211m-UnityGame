@@ -29,10 +29,10 @@ public class Lecturer : MonoBehaviour
         get { return Mathf.FloorToInt((Base.Defense * Level) / 100f) + 50; }
     }
 
-    public bool TakeDamage(QuestionBase question, Lecturer answerer)
+    public bool TakeDamage(QuestionBase question, Lecturer answerer, int baseAtt)
     {
         float modifiers = Random.Range(0.85f, 1f);
-        float d = 10 * ((float)answerer.Attack / Defense) * 2;
+        float d = baseAtt * ((float)answerer.Attack / Defense) * 2;
         int damage = Mathf.FloorToInt(d * modifiers);
 
         KP -= damage;

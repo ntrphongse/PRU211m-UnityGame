@@ -11,25 +11,16 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask interactableLayer;
 
     private bool isMoving;
-    private bool isDead;
 
     private Vector2 input;
 
     private Animator animator;
 
-    public event Action OnEncounter;
+    public event Action<string> OnEncounter;
 
     private void Awake()
     {
         animator = GetComponent<Animator>();
-    }
-
-    private void CheckEncounter()
-    {
-        if (UnityEngine.Random.Range(1, 10) < 5)
-        {
-            OnEncounter();
-        }
     }
 
     public void HandleUpdate()

@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class KPBar : MonoBehaviour
 {
     [SerializeField] GameObject knowledge;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +22,7 @@ public class KPBar : MonoBehaviour
     {
         float curKp = knowledge.transform.localScale.x;
         float changeAmt = curKp - newKp;
-        while(curKp - newKp > Mathf.Epsilon)
+        while (curKp - newKp > Mathf.Epsilon)
         {
             curKp -= changeAmt * Time.deltaTime;
             knowledge.transform.localScale = new Vector3(curKp, 1f);

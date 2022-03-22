@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7e7cff11c7ec47549bcccecc79b8a5a2, type: 3}
-  m_Name: Player
+  m_Name: BOSS
   m_EditorClassIdentifier: 
-  mob_name: Student
+  mob_name: Owo
   description: 
-  frontSprite: {fileID: -3181128867261425065, guid: ee2b459839133c840a3b18d4d1f628bc, type: 3}
-  backSprite: {fileID: -3181128867261425065, guid: ee2b459839133c840a3b18d4d1f628bc, type: 3}
+  frontSprite: {fileID: -128083769461270964, guid: ad2444eeca406ce47a372b1cdb6a8287, type: 3}
+  backSprite: {fileID: -2086765476746818828, guid: ad2444eeca406ce47a372b1cdb6a8287, type: 3}
   maxKp: 0
   attack: 0
   defense: 0

@@ -17,7 +17,18 @@ public class MobBase : ScriptableObject
     [SerializeField] int attack = 10;
     [SerializeField] int defense = 5;
     [SerializeField] int speed;
-
+    public void SetName(string name)
+    {
+        mob_name = name;
+    }
+    public void SetFrontSprite(Sprite sprite)
+    {
+        frontSprite = sprite;
+    }
+    public void SetBackSprite(Sprite sprite)
+    {
+        backSprite = sprite;
+    }
     public string Name
     {
         get { return mob_name; }
@@ -34,6 +45,10 @@ public class MobBase : ScriptableObject
     public string Description
     {
         get { return description; }
+    }
+    public void SetMaxKp(int MaxKp)
+    {
+        maxKp = MaxKp;
     }
     public int MaxKp
     {

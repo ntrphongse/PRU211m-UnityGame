@@ -4,20 +4,29 @@ using UnityEngine;
 using System;
 using UnityEngine.UI;
 
-public enum BattleState { Start, PlayerAction, PLayerMove, EnemyMove, Busy }
+public enum BattleState { Start, PlayerAction, PLayerMove, EnemyMove, Busy, BossFight }
 
 public class BattleSystem : MonoBehaviour
 {
+    public static readonly string CorrectAnswersDuringBoss = "CorrectAnswersDuringBoss";
     public TextAsset jsonFile;
 
     [SerializeField] BattleUnit player;
     [SerializeField] BattleHud playerHud;
     [SerializeField] BattleUnit enemy;
+    [SerializeField] BattleUnit boss;
     [SerializeField] BattleHud enemyHud;
     [SerializeField] BattleDialogBox dialogBox;
     [SerializeField] QuestionBase q;
-    [SerializeField] GameController gameController;
     [SerializeField] TImer timer;
+    [SerializeField] AudioSource bossMusic;
+    [SerializeField] AudioSource comeBackMusic;
+
+
+    private bool IsBossFight;
+    private bool IsComeback;
+    private int noOfFaints;
+
 
 
     public event Action<bool> OnBattleOver;
@@ -27,26 +36,51 @@ public class BattleSystem : MonoBehaviour
     BattleState state;
     int currentAction;
     int currentMove;
-    public void StartBattle()
+    public void StartBattle(string npcName)
     {
-        StartCoroutine(SetupBattle());
+        noOfFaints = 0;
+        PlayerPrefs.SetInt(CorrectAnswersDuringBoss, 0);
+        StartCoroutine(SetupBattle(npcName));
     }
 
-    public IEnumerator SetupBattle()
+    public IEnumerator SetupBattle(string npcName)
     {
-
-        player.Setup();
-        enemy.Setup();
+        IsBossFight = false;
+        IsComeback = false;
+        player.Setup("Student");
+        enemy.Setup(npcName);
         playerHud.SetData(player.Lecturer);
         enemyHud.SetData(enemy.Lecturer);
 
-        yield return dialogBox.TypeDialog($"The lecturer {enemy.Lecturer.Base.Name} appeared.");
+        yield return dialogBox.TypeDialog($"The lecturer {npcName} appeared.");
         yield return new WaitForSeconds(1f);
         q = enemy.Lecturer.GetRandomQuestion(jsonFile);
         yield return dialogBox.TypeDialog($"First question is...\n{q.Question}");
         yield return new WaitForSeconds(3f);
-        dialogBox.setMoveNames(q.SuggestedAnswers);
+        if (npcName == "BossNPC")
+        {
+            bossMusic.Play();
+            enemy.PlayHitAnimation();
+            yield return dialogBox.TypeDialog("aaaaaaaaaaaagh....");
+            enemy.Lecturer.TakeDamage(q, player.Lecturer, 100000);
+            yield return enemyHud.UpdateKP();
+            yield return dialogBox.TypeDialog(".................??? What?????");
+            yield return new WaitForSeconds(3f);
+            yield return dialogBox.TypeDialog("You fool! You have doomed us all!!!");
+            yield return new WaitForSeconds(3f);
+            enemy.PLayFaintAnimation();
 
+            IsBossFight = true;
+            boss.Setup("01101100011010000110101101110000");
+            enemyHud.SetData(boss.Lecturer);
+            yield return dialogBox.TypeDialog($"The lecturer 01101100011010000110101101110000 appeared.");
+            yield return new WaitForSeconds(15f);
+            q = enemy.Lecturer.GetRandomQuestion(jsonFile);
+            yield return dialogBox.TypeDialog($"First question is...\n{q.Question}");
+            yield return new WaitForSeconds(3f);
+        }
+
+        dialogBox.setMoveNames(q.SuggestedAnswers);
         PlayerAction();
     }
 
@@ -70,34 +104,140 @@ public class BattleSystem : MonoBehaviour
         if (correct)
         {
             player.PlayAttacAnimation();
-            enemy.PlayHitAnimation();
-            isLecturerFainted = enemy.Lecturer.TakeDamage(q, player.Lecturer);
+            if (IsBossFight)
+            {
+                boss.PlayHitAnimation();
+                if (IsComeback)
+                {
+                    isLecturerFainted = boss.Lecturer.TakeDamage(q, player.Lecturer, 10);
+                }
+                else
+                {
+                    isLecturerFainted = boss.Lecturer.TakeDamage(q, player.Lecturer, 1);
+                    PlayerPrefs.SetInt(CorrectAnswersDuringBoss, 1);
+                }
+            }
+            else
+            {
+                enemy.PlayHitAnimation();
+                isLecturerFainted = enemy.Lecturer.TakeDamage(q, player.Lecturer, 10);
+            }
             yield return enemyHud.UpdateKP();
-
         }
         else
         {
-            enemy.PlayAttacAnimation();
+            if (IsBossFight)
+            {
+                boss.PlayAttacAnimation();
+            }
+            else
+            {
+                enemy.PlayAttacAnimation();
+            }
             player.PlayHitAnimation();
-            isPlayerFainted = player.Lecturer.TakeDamage(q, player.Lecturer);
+            if (IsBossFight)
+            {
+                isPlayerFainted = player.Lecturer.TakeDamage(q, player.Lecturer, 20);
+            }
+            else
+            {
+                isPlayerFainted = player.Lecturer.TakeDamage(q, player.Lecturer, 10);
+            }
             yield return playerHud.UpdateKP();
 
         }
         if (isLecturerFainted)
         {
             yield return dialogBox.TypeDialog("You are worthy");
-            enemy.PLayFaintAnimation();
+            if (IsBossFight)
+            {
+                boss.PLayFaintAnimation();
+            }
+            else
+            {
+                enemy.PLayFaintAnimation();
+            }
             yield return new WaitForSeconds(2f);
             OnBattleOver(true);
-            OnWiningGame(true);
+            if (IsBossFight)
+            {
+                OnWiningGame(true);
+            }
         }
         else if (isPlayerFainted)
         {
-            yield return dialogBox.TypeDialog("You are not worthy");
-            player.PLayFaintAnimation();
-            yield return new WaitForSeconds(2f);
-            OnBattleOver(false);
-            OnWiningGame(false);
+            if (IsBossFight)
+            {
+                if (noOfFaints == 0)
+                {
+                    noOfFaints += 1;
+                    if (PlayerPrefs.GetInt(CorrectAnswersDuringBoss) > 0)
+                    {
+                        yield return dialogBox.TypeDialog("................");
+                        yield return new WaitForSeconds(2f);
+                        boss.PlayAttacAnimation();
+                        player.PlayHitAnimation();
+                        bossMusic.Stop();
+
+                        yield return dialogBox.TypeDialog("................");
+                        yield return new WaitForSeconds(2f);
+                        boss.PlayAttacAnimation();
+                        player.PlayHitAnimation();
+                        player.Lecturer.TakeDamage(q, player.Lecturer, 20);
+                        yield return dialogBox.TypeDialog("wHy Won'T yUou dIeeeeeeeeeeeeeeeeeeeee??????????????");
+                        yield return new WaitForSeconds(2f);
+                        boss.PlayAttacAnimation();
+                        player.PlayHitAnimation();
+                        player.Lecturer.TakeDamage(q, player.Lecturer, 20);
+                        yield return new WaitForSeconds(2f);
+                        boss.PlayAttacAnimation();
+                        player.PlayHitAnimation();
+                        player.Lecturer.TakeDamage(q, player.Lecturer, 20);
+                        yield return new WaitForSeconds(2f);
+
+                        yield return new WaitForSeconds(2f);
+                        comeBackMusic.Play();
+
+                        yield return dialogBox.TypeDialog("*You were supposed to die....");
+                        dialogBox.SetColor(Color.blue);
+                        yield return new WaitForSeconds(2f);
+                        yield return dialogBox.TypeDialog("*But you REFUSED");
+                        yield return new WaitForSeconds(2f);
+                        yield return dialogBox.TypeDialog("*You have one more chance left... Do not miss it...");
+                        IsComeback = true;
+                        player.PlayHealAnimation();
+                        player.Lecturer.TakeDamage(q, player.Lecturer, -50);
+                        yield return playerHud.UpdateKP();
+                        yield return new WaitForSeconds(2f);
+
+                        StartCoroutine(EnemyMove());
+                    }
+                    else
+                    {
+                        yield return dialogBox.TypeDialog("gOod bYeeeeeee");
+                        player.PLayFaintAnimation();
+                        yield return new WaitForSeconds(2f);
+                        OnBattleOver(false);
+                        OnWiningGame(false);
+                    }
+                }
+                else
+                {
+                    yield return dialogBox.TypeDialog("gOod bYeeeeeee");
+                    player.PLayFaintAnimation();
+                    yield return new WaitForSeconds(2f);
+                    OnBattleOver(false);
+                    OnWiningGame(false);
+                }
+            }
+            else
+            {
+                yield return dialogBox.TypeDialog("You are not worthy");
+                player.PLayFaintAnimation();
+                yield return new WaitForSeconds(2f);
+                OnBattleOver(false);
+                OnWiningGame(false);
+            }
         }
         else
         {
@@ -212,10 +352,29 @@ public class BattleSystem : MonoBehaviour
 
     IEnumerator HandleRun()
     {
+        if (IsBossFight)
+        {
+            yield return dialogBox.TypeDialog($"yOu aRe nOt GoInG AnYWhEreeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee");
+            yield return new WaitForSeconds(1f);
+            player.PlayHitAnimation();
+            bool isPlayerFainted = player.Lecturer.TakeDamage(q, player.Lecturer, 20);
+            yield return playerHud.UpdateKP();
+            if (isPlayerFainted)
+            {
+                yield return dialogBox.TypeDialog("gOod bYeeeeeee");
+                player.PLayFaintAnimation();
+                yield return new WaitForSeconds(2f);
+                OnBattleOver(false);
 
-        yield return dialogBox.TypeDialog($"You coward...");
-        yield return new WaitForSeconds(1f);
-        OnBattleOver(true);
+                OnWiningGame(false);
+            }
+        }
+        else
+        {
+            yield return dialogBox.TypeDialog($"You coward...");
+            yield return new WaitForSeconds(1f);
+            OnBattleOver(true);
+        }
     }
 
 

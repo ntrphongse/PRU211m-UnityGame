@@ -15,7 +15,10 @@ public class BattleDialogBox : MonoBehaviour
     [SerializeField] List<Text> actionsText;
     [SerializeField] List<Text> moveText;
 
-
+    public void SetColor(Color color)
+    {
+        dialogText.color = color;
+    }
     public void SetDialog(string dialog)
     {
         dialogText.text = dialog;

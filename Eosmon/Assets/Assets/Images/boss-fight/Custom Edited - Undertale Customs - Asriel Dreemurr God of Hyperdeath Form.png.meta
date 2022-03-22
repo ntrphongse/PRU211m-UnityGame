@@ -1,0 +1,4883 @@
+fileFormatVersion: 2
+guid: 81341e883327dfe4aab2ff2b8377ccef
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1410
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0addf449e4f59b74ca65f0fbeb6bcc15
+      internalID: -1187036852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 1410
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dde15557da5d5f54eb92c7e76129fad1
+      internalID: 1093217124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 1410
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8bd5fd9995f42f4aa2c676cfeeafd53
+      internalID: -2001729283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_3
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1410
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3cdfb6c8de170c46bad404a2493a008
+      internalID: -308085624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_4
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 1410
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9910c2c5cea6c7b4d814d81c343e291c
+      internalID: 524547579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_5
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 1410
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be537d9bf18b1974ba0fbdf395b62c32
+      internalID: 1448764550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_6
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1410
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffaee09b8bbbf364baf73f22b1eaa607
+      internalID: -1019480049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_7
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 1410
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d058fccaad5c1c240870b4e2bed0bfeb
+      internalID: 1048282112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_8
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1410
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c3015a654585a744b2898132e06d627
+      internalID: -1072453938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_9
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1346
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a46b6c39d7befb24da72dfb84ae32e7d
+      internalID: -638850142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_10
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 1346
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c89289afeed2ac45b6e43d421e342d2
+      internalID: 810951311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_11
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 1346
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4776accfdb8d2a419a998bf1b99cf57
+      internalID: -1934784891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_12
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1346
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0bc52f4c2389e3478ed2ce1e879ab86
+      internalID: 134031182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_13
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 1346
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81e90de544a2b7d4ba48ca791f0bbcb8
+      internalID: 1197910986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_14
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 1346
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b48393ecf112c1348b7dd4e04b7f503a
+      internalID: -1825449668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_15
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1346
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb9073634fcf7e043b2c7543a8f7814a
+      internalID: 973692678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_16
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 1346
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11424f752cbf1ef4398fd9a5e78c4cd0
+      internalID: -1929495682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_17
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1346
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae2542edcbe926c41a13fe00026bdf1e
+      internalID: 228585371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_18
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1282
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84f9715b9bef74b4ba8bd65671ca23fa
+      internalID: -739774615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_19
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 1282
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e961ad220569d6e40af90ee5b14770fa
+      internalID: -1241580803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_20
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 1282
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2186d2f65a157df49a355e1c3046d363
+      internalID: 1109149729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_21
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1282
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 541ce4fdbbd2bea498165c63581de29b
+      internalID: 51266746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_22
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 1282
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bea2e6aaffc3a3847808bfe98b80cc44
+      internalID: -1680266541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_23
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 1282
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ca5e829ab4b3774bbc4d42b45cba149
+      internalID: 149586505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_24
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1282
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e32409a37e930e5408a640e54706fc25
+      internalID: -647924323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_25
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 1282
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd58fa77164d088439310675c6696a7c
+      internalID: 169681961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_26
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1282
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f52c635486526e6438a6b48a9f7095fb
+      internalID: 840391733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_27
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1218
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6f10103218f2664090a090aa3f76dc6
+      internalID: -741474161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_28
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 1218
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3f6530136df4694bbcaea784e5b576a
+      internalID: -647672682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_29
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 1218
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4b2b3e101cbfeb408d960c020521ac3
+      internalID: -2067847084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_30
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1218
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53a4c01c5d8c53d4fb74cf806514689a
+      internalID: -35928583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_31
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 1218
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d889cf68ce598342a29a6eac5c02db1
+      internalID: -1060483587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_32
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 1218
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f33d29ddcad9254c9ea61530a3043e5
+      internalID: 2031604425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_33
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1218
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25fd7efad61741641acdac8760023854
+      internalID: -2070162060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_34
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 1218
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c81f51253049a89499f3765934d7e9d6
+      internalID: -1675937215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_35
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1218
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73fe5c8270f8f0f46973419dbfe82cb3
+      internalID: 904934201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_36
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1154
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3251e0032185a4479fbc38b9b4d5d23
+      internalID: -978604510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_37
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 1154
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e77744f20822f0f4db44277dcfe0b66c
+      internalID: 396722059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_38
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 1154
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1820026b496e98b4c986af7770529895
+      internalID: 404791426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_39
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1154
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5da00c5fbe50ab1488f9b5c598f57603
+      internalID: -744089029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_40
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 1154
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53c933e6a0499784c8cfbaebdf904f74
+      internalID: 1520110634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_41
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 1154
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9baebac5c0c88d4478c362f4ee214ab6
+      internalID: -1409337276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_42
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1154
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f973e0a1424f3554bb8923ed72f5d4f1
+      internalID: -1509577065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_43
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 1154
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db7eb71959a17e042816bb289ab1e771
+      internalID: -605336401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_44
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1154
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7a8296b563626f4491222342f7fe9b3
+      internalID: 842222593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_45
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1090
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 643f524c8488a8b44ac02df34ee71671
+      internalID: 897434438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_46
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 1090
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2fa71be414e919449b4f8720418b444
+      internalID: 1601399689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_47
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 1090
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5ec4c2af8279dc43baaeafffeb07a7e
+      internalID: -1933207684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_48
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1090
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f838362d7247c343aca2fcd4b17fd70
+      internalID: -1746206930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_49
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 1090
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bd1e59d249b9d24ebe406b8d54f7d26
+      internalID: -12858355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_50
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 1090
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03574b1f4bed64d4883d21ef942dfe71
+      internalID: 424719621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_51
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1090
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed45e2f8be1f3b249915356b2a51eeae
+      internalID: 945005362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_52
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 1090
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 576967260399bd44cad728e1f397dd55
+      internalID: -2026746798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_53
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1090
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9211da1f817b36c44b0a539dfe4f38a0
+      internalID: 1706964246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_54
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1026
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51c3dc3b84f98d74498da615ed15ce99
+      internalID: 766745731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_55
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 1026
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8398eb41e27e854bb648d50f66c6ae0
+      internalID: -742206443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_56
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 1026
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba788f1882e33a74c9010b24a9cd33c6
+      internalID: -1271245183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_57
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1026
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50928c14361ab364a8a3f86cd5d295b5
+      internalID: 1889258413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_58
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 1026
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cad8f4731c1bce4c9e07daf88de4886
+      internalID: 834770458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_59
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 1026
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64b4ad49563393440931005f3ca840bd
+      internalID: -498193232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_60
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1026
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8cd7d7e1e1f7d64d873532641d1bdc0
+      internalID: 1428912314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_61
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 1026
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74109d88da72eea4f85d625826df4423
+      internalID: 1098511391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_62
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1026
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56835772cffb8c54ca7e78574e915ca8
+      internalID: 1970218741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_63
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 962
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bb4b033bb65f5e4ba9c2829a2b1e491
+      internalID: 1680114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_64
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 962
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c3ca5ec5e6607a4e8baee60a90ecef7
+      internalID: -1526082990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_65
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 962
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c7142b325e614246b190413011a8e20
+      internalID: 853136360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_66
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 962
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b8438539010d7949ad6c78d62fbd6ac
+      internalID: -475216804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_67
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 962
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f392c4a72f86f70459e6b3cbf315cff8
+      internalID: -898831033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_68
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 962
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 943787380090ba94db44d509f051957c
+      internalID: 848063763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_69
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 962
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97b606345534ea747ba9363e7da1dc4c
+      internalID: -1760324980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_70
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 962
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91e1119df7800b04b96d98b0dbc7945f
+      internalID: -1588666392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_71
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 962
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 852efb2b08b32f840a7b8005e40a25e4
+      internalID: -835837802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_72
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 898
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23755a610f4b94e42b4e7bdf7cbf498a
+      internalID: 1598596167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_73
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 898
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36020afc191665c4ebc6fb829391fcdc
+      internalID: -420843751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_74
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 898
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1caebb71ef2b6904cb41d152b4cbacaa
+      internalID: 1676366564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_75
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 898
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bdb078fe0ae3b744a81e2d7746c2cd1
+      internalID: 1609357449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_76
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 898
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85b7a38e9c5168b419b4e5e95c1a6710
+      internalID: 180115769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_77
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 898
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fb4195811f68b348ae46e71db22d6ac
+      internalID: -648574791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_78
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 898
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6511aa6812b7fef41b3898cf494dc5d7
+      internalID: -716260146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_79
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 898
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc936bcd012d6d24e95ccd9d8fe2ccf3
+      internalID: 312245393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_80
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 898
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b865f540fc56ea4d96c7be04f28d097
+      internalID: 726008974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_81
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 834
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74da4779ada58c845a7cb2cf5f9b43f4
+      internalID: -1039268035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_82
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 834
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0127ef971d7871344a6d0c2e1b403425
+      internalID: 1137321764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_83
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 834
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19f6cc0606f32164884618bbca31b789
+      internalID: -160718223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_84
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 834
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dddc85f0e23069342a2a26645d500e24
+      internalID: 447421856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_85
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 834
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 251c828158e7dca4c946d5b8ecaca551
+      internalID: -1620332867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_86
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 834
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a8955e12d616204487d7bcdc9498e83
+      internalID: 1233820736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_87
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 834
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dce8cf438e418214abdc3370ded5ff27
+      internalID: -1296183386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_88
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 834
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcca8b1bff2737344ae51cafbbe01e7b
+      internalID: -1369750797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_89
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 834
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 473645697b74ebd4c91c47c91f0e175c
+      internalID: -1548215714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_90
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 770
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c5796297495a604e8a77236bd89612e
+      internalID: 877114971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_91
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 770
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84c08066efa75b84f8a31d503fd5c417
+      internalID: -810974738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_92
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 770
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad3f68b9bd1188749a2adace3932c936
+      internalID: 2099337215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_93
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 770
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd211f4e2aeafd54c936c4da5f473ddd
+      internalID: 1132179764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_94
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 770
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6537628fdc840a4e8c1a0af2d74101e
+      internalID: -1420300295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_95
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 770
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbb9007ecb3a78949adb3ea57f3d7d85
+      internalID: -1268827135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_96
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 770
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1e165c288b412b48b2b1e69d21e06b2
+      internalID: -1382015636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_97
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 770
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bb0cf60baf44934d80792a69bef2345
+      internalID: -1891914673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_98
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 770
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6aace7c0d5adbd4aaf91517dcb6a653
+      internalID: -942762471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_99
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 706
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4a5a29913fb3cd4085d9a302a5035db
+      internalID: -1265984387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_100
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 706
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8cd87a4aa06bf0409d9f0188cfe23f8
+      internalID: 152917891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_101
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 706
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b634b449291496b4f8e909095ddcf944
+      internalID: -1144331125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_102
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 706
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7200e81ee8bec30428db3bb7f4d6fe54
+      internalID: -973358056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_103
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 706
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b25ebd506bb3ed43b2684bf42223249
+      internalID: -955843649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_104
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 706
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0ebce513bf17594aa7dff66cc654076
+      internalID: -428825607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_105
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 706
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59dfc6f908e8566478ff846dcc812bc3
+      internalID: 352106590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_106
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 706
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0ffdaa80abe8854ab555b27ebdd1c50
+      internalID: -1183442966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_107
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 706
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc58bca9b570de145a82d46382e3b018
+      internalID: 112033169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_108
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 642
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f3eed9e069590a4d87970d327cc5196
+      internalID: 764441059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_109
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 642
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d815bcd61ee6f264da59fdec1a4a7d7c
+      internalID: 285741152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_110
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 642
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cebce4238cbfbe4595e8ed1eec3efe5
+      internalID: -1374256996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_111
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 642
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3baebf7e68383c64390050c3be3bcfaa
+      internalID: 482907805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_112
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 642
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 286318740260ad14e8de0833095fd75c
+      internalID: 1454289756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_113
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 642
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 406b6ac3202384649820178f4f8c54a9
+      internalID: -1316305729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_114
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 642
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 888ef5d1f63cfca45b614ba7e2e25496
+      internalID: -310894792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_115
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 642
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfce1372acd997e48b20041a153e18ec
+      internalID: -903741486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_116
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 642
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a452e2e5db8bfb4f907f23d73d7b5c7
+      internalID: 1367448676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_117
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 578
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04eff1af75526f940a27aa6f2d5086fb
+      internalID: -1156341795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_118
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 578
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a2e970b8002f324783f43d8d334cbe8
+      internalID: -1343373528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_119
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 578
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b620fca1a9d396a409c038be453d4c55
+      internalID: -381972295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_120
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 578
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4cf79455991cdf439c675d2bff86547
+      internalID: 1171984466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_121
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 578
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d708bc9ceff94e488a1f6a680a8eb29
+      internalID: -2057962360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_122
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 578
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a36f7a78fc00494429e5ccdaf91d0fae
+      internalID: 1021046160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_123
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 578
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b7ca8fcbcb520f4abc339445f8c61ac
+      internalID: 1744547120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_124
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 578
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84654647be0167e4a8dcec7960a09398
+      internalID: 70072335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_125
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 578
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e6f1c9e8b87ca6419c7c62b30934ac4
+      internalID: -362870841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_126
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 514
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c5d06aa4c5327a46aae5112fd928cf4
+      internalID: -1085570815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_127
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 514
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 092e8b551f924c04b8851d4d584b2531
+      internalID: 929776491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_128
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 514
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe8799b7f8e834b4cbebb8ab8b8cb957
+      internalID: 2012879928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_129
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 514
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caf096a4186d9054780be0321a923fbd
+      internalID: 1239776807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_130
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 514
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc515130ede3de04b92ea26ad315dfc8
+      internalID: 701803693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_131
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 514
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4688c6dceeb64674a908f3f51ec5585f
+      internalID: -483175959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_132
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 514
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b5ba2488c65f0146991f6ffa803fea1
+      internalID: -1694233955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_133
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 514
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba62723e37b30cd41834bf9b5b03ab86
+      internalID: -1480068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_134
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 514
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: add3dabd28c1c714e9ca9f26cff5bf67
+      internalID: 1613009546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_135
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 450
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92c8dc7e9e43a9e48851e667509f784b
+      internalID: 449271025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_136
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 450
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b158b134d4eac02459ce625a55dc13e9
+      internalID: 397127718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_137
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 450
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e3ec46c9a8833243b99368c44946a49
+      internalID: 2007037286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_138
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 450
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d53398e36826d74b9f9a9dcbf83882f
+      internalID: -874021023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_139
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 450
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6534552898538f469efc1086b98cf51
+      internalID: -39226033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_140
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 450
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13de62ea2dc93dd4abc0049312b7921a
+      internalID: 595668260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_141
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 450
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29adfb9f446cfaa418dbbc95ec366eac
+      internalID: -266687835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_142
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 450
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a96213a75f734f4c82a44a55f7b39ee
+      internalID: 680123296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_143
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 450
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f67ead40c760034f82bf284ecc9cfc5
+      internalID: -1964239474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_144
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 386
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ef01ede3a6782a4189652479b49f378
+      internalID: 1342614760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_145
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 386
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf759166d4ba32f4082fa1820805b4ff
+      internalID: 958323522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_146
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 386
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97d721b08199f05439d38a1c814ab0f7
+      internalID: 345803034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_147
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 386
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0341017c4249d334f8dfda96fadd0398
+      internalID: 410112608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_148
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 386
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df16b84a306e2c1469826b7c8d0e47ae
+      internalID: -1526609684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_149
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 386
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c149b854ae222042a093886ce2cc6a8
+      internalID: 1009291494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_150
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 386
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34be445dae5a4444aadfe8750814a19b
+      internalID: -1916065625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_151
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 386
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc6149c3cb33e3e408397d9e55a3574f
+      internalID: -79865150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_152
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 386
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f7eec1d060224a4a91bd6275bb4e3ce
+      internalID: 1103125977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_153
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 322
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d0f1873387364c469f822637be15bf6
+      internalID: 414976212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_154
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 322
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84db4790bb3b2c84cb96e788bdea0265
+      internalID: 1256293652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_155
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 322
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd09f15cc13edf04d844fb201ac74dd0
+      internalID: 277411331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_156
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 322
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f12a3a8b18dc8a408cc1b6da68d3871
+      internalID: 1623012755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_157
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 322
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 182d4d4a31610814798fcebd4730a666
+      internalID: 473403177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_158
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 322
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3ca5952b45a3b14291d4e814eacf63c
+      internalID: -1077883290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_159
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 322
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 764814a163ddf8e4d86f6dba129a5cad
+      internalID: 2105101557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_160
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 322
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48d42a0ac1e882c489b494958322da1e
+      internalID: -1420369176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_161
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 322
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3b301955c3d063448f03baa774db638
+      internalID: -1566751931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_162
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 258
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddf21376c756d8042a809f4c1076c6e3
+      internalID: -1321279418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_163
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 258
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44b46c91423b310418594d3ab16ba2d2
+      internalID: -1811164986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_164
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 258
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a383f8a77b9ca54c9996ebde9c774ad
+      internalID: 325593089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_165
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 258
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 310aead142b3bfd48868dda3b601caa4
+      internalID: -167306792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_166
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 258
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2ae1a2b1b9990c419f688f44ad314a3
+      internalID: 319778172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_167
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 258
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83fc3aa2174b61a43846d95efb47c86e
+      internalID: 1842357025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_168
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 258
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d4504977cdccad4fb42e1398068777f
+      internalID: -882548695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_169
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 258
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c322b51f695e25d4099b8bf02392ce1f
+      internalID: 1472354920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_170
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 258
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 986a3a65cae9070459770dfdc51da777
+      internalID: 2080044684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_171
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 194
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae6e8b6fb3bfdd84dab096b41fc9dd26
+      internalID: 994473721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_172
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 194
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03613ff34d80c5247bb410474d93e2d6
+      internalID: 190662867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_173
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 194
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0ea448794da57f4495edf95a483aef3
+      internalID: 239751253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_174
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 194
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5e47eb8214490d42925245d5e0ab3e0
+      internalID: 1067439169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_175
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 194
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 988928c16da445c44bc32c574cd6d19b
+      internalID: -304276077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_176
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 194
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aa148e8897b9194d963b867e31b9614
+      internalID: -2058086170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_177
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 194
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fd2905ba18e11c498ac976d9cacb579
+      internalID: 1491474435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_178
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 194
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cda50a5c53968224a8125dcb8f309e51
+      internalID: -1909829509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_179
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 194
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ef2a870ab770614fa9fb487a9709d17
+      internalID: -1908634493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_180
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 130
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38726b4022139e249b8ea6340c95c2b5
+      internalID: 659142104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_181
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 130
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f01864e1aaf43e841af40206c83f07f1
+      internalID: -850536728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_182
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 130
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03bb3205bbc1ca24f8d06722b0fa623a
+      internalID: 1772035659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_183
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 130
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 999a4c782a85bfc4da59ecfece7876bc
+      internalID: -2140899726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_184
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 130
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 048ebfbac00548b44b95fdd2a2396c18
+      internalID: 1088960866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_185
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 130
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 418847f4a7162e84c8962a1a43148338
+      internalID: -1611766826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_186
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 130
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 983de60edd688ca448bc46f264930be5
+      internalID: -358123046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_187
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 130
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18eeb9598bb97224d84eefb4e199fa99
+      internalID: -1605226734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_188
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 130
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67df795946d24ba41afa9fe26f9bd484
+      internalID: 1143616673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_189
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 66
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5fc710f4d608b44194e1ae3836067ad
+      internalID: 33930362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_190
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 66
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54daa3337a14f5f4d9f77e9a82f554cb
+      internalID: -1810399489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_191
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 66
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 772252032a4091344b00af11b8ed8ea6
+      internalID: -1992944986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_192
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 66
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fb897003f993254eaf7d128055f828e
+      internalID: 418466600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_193
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 66
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb86863cc3ffc3444a588741cc1373ad
+      internalID: -174985592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_194
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 66
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d204213174de0541a822db1d6a2572f
+      internalID: 1594315965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_195
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 66
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f626f011930b60847ae1eff8deb326c0
+      internalID: -829896676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_196
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 66
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bb7974e335cc854299030fda1de1ebc
+      internalID: 578266563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_197
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 66
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9544d111ed45382478f9d98068f35d4d
+      internalID: -1640384322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_198
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 2
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95a93f807c1ab8b4682e8abcf30bb314
+      internalID: -401999469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_199
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 2
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a15cf49b6d408d4695dcdd8a56a1af2
+      internalID: -1401783980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_200
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 2
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db7d608e59ba13b4881dc1ab0c029242
+      internalID: -1433175484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_201
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 2
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8892e80ed61de7440b37a1272bf7e771
+      internalID: -831187185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_202
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 2
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6c3883b6f4e60c42a32167a9d5208e5
+      internalID: -1082725362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_203
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 2
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2b01a6a5f41e2a4a92a2c696c907868
+      internalID: 1735093166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_204
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9be50db4bf470f0419cd2144028a4283
+      internalID: 763295115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_205
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 2
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d6bec9f536d6d94cbacc1fa06437c87
+      internalID: -184793725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath
+        Form_206
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 2
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c646a8955131ecf49a0af1b7229c0302
+      internalID: 1135414126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_38: 404791426
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_37: 396722059
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_0: -1187036852
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_159: 2105101557
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_117: -1156341795
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_11: -1934784891
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_90: 877114971
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_50: 424719621
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_91: -810974738
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_180: 659142104
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_43: -605336401
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_63: 1680114
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_66: -475216804
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_100: 152917891
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_157: 473403177
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_96: -1382015636
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_124: 70072335
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_142: 680123296
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_6: -1019480049
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_27: -741474161
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_44: 842222593
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_45: 897434438
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_152: 1103125977
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_71: -835837802
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_77: -648574791
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_62: 1970218741
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_104: -428825607
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_85: -1620332867
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_64: -1526082990
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_177: 1491474435
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_192: 418466600
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_113: -1316305729
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_147: 410112608
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_12: 134031182
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_112: 1454289756
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_23: 149586505
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_15: 973692678
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_33: -2070162060
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_4: 524547579
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_139: -39226033
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_156: 1623012755
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_87: -1296183386
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_151: -79865150
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_184: 1088960866
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_17: 228585371
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_169: 1472354920
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_170: 2080044684
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_203: 1735093166
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_194: 1594315965
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_166: 319778172
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_3: -308085624
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_131: -483175959
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_35: 904934201
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_81: -1039268035
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_86: 1233820736
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_190: -1810399489
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_205: -184793725
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_206: 1135414126
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_46: 1601399689
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_32: 2031604425
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_150: -1916065625
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_54: 766745731
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_176: -2058086170
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_67: -898831033
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_189: 33930362
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_135: 449271025
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_181: -850536728
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_133: -1480068
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_191: -1992944986
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_2: -2001729283
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_175: -304276077
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_126: -1085570815
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_92: 2099337215
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_99: -1265984387
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_107: 112033169
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_59: -498193232
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_103: -955843649
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_52: -2026746798
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_98: -942762471
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_88: -1369750797
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_164: 325593089
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_30: -35928583
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_193: -174985592
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_48: -1746206930
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_108: 764441059
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_155: 277411331
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_56: -1271245183
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_120: 1171984466
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_89: -1548215714
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_58: 834770458
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_22: -1680266541
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_13: 1197910986
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_41: -1409337276
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_25: 169681961
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_171: 994473721
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_163: -1811164986
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_132: -1694233955
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_127: 929776491
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_70: -1588666392
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_201: -831187185
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_93: 1132179764
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_202: -1082725362
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_119: -381972295
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_53: 1706964246
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_110: -1374256996
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_109: 285741152
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_80: 726008974
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_168: -882548695
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_68: 848063763
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_123: 1744547120
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_161: -1566751931
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_195: -829896676
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_115: -903741486
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_148: -1526609684
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_158: -1077883290
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_196: 578266563
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_154: 1256293652
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_42: -1509577065
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_187: -1605226734
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_21: 51266746
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_173: 239751253
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_57: 1889258413
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_145: 958323522
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_79: 312245393
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_172: 190662867
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_101: -1144331125
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_153: 414976212
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_69: -1760324980
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_95: -1268827135
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_40: 1520110634
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_78: -716260146
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_200: -1433175484
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_73: -420843751
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_84: 447421856
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_94: -1420300295
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_174: 1067439169
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_198: -401999469
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_140: 595668260
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_82: 1137321764
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_47: -1933207684
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_114: -310894792
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_137: 2007037286
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_31: -1060483587
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_55: -742206443
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_129: 1239776807
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_51: 945005362
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_34: -1675937215
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_143: -1964239474
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_162: -1321279418
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_146: 345803034
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_136: 397127718
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_10: 810951311
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_9: -638850142
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_188: 1143616673
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_178: -1909829509
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_186: -358123046
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_134: 1613009546
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_121: -2057962360
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_197: -1640384322
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_118: -1343373528
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_102: -973358056
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_199: -1401783980
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_74: 1676366564
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_111: 482907805
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_24: -647924323
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_144: 1342614760
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_130: 701803693
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_7: 1048282112
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_185: -1611766826
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_83: -160718223
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_179: -1908634493
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_26: 840391733
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_36: -978604510
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_39: -744089029
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_28: -647672682
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_167: 1842357025
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_8: -1072453938
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_160: -1420369176
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_122: 1021046160
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_116: 1367448676
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_141: -266687835
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_165: -167306792
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_61: 1098511391
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_1: 1093217124
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_105: 352106590
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_182: 1772035659
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_128: 2012879928
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_5: 1448764550
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_60: 1428912314
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_97: -1891914673
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_18: -739774615
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_75: 1609357449
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_138: -874021023
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_19: -1241580803
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_106: -1183442966
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_204: 763295115
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_76: 180115769
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_149: 1009291494
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_20: 1109149729
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_16: -1929495682
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_29: -2067847084
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_49: -12858355
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_65: 853136360
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_72: 1598596167
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_14: -1825449668
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_183: -2140899726
+      Custom Edited - Undertale Customs - Asriel Dreemurr God of Hyperdeath Form_125: -362870841
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
