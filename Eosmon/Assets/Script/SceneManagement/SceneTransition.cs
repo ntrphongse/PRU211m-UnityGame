@@ -20,6 +20,12 @@ public class SceneTransition : MonoBehaviour
                          collision.transform.position.y - 1f
                          );
                     break;
+                case 5:
+                    SavedPositionManager.savedPositions = new Vector2(
+                         collision.transform.position.x,
+                         collision.transform.position.y - 1f
+                         );
+                    break;
             }
             SceneManager.LoadScene(sceneIndex);
         }

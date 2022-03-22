@@ -3,18 +3,34 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public enum GameState { FreeRoam, Battle, Dialog, Died, Finished }
+public enum GameState { FreeRoam, Battle, Dialog, Died, Finished, Ended }
 public class GameController : MonoBehaviour
 {
     [SerializeField] PlayerMovement playerController;
     [SerializeField] BattleSystem battleSystem;
     [SerializeField] Camera worldCam;
     [SerializeField] Camera battleCam;
+    [SerializeField] AudioSource music;
 
     GameState state;
 
     private void Start()
     {
+        Scene currentScene = SceneManager.GetActiveScene();
+        if (currentScene.name == "InfoRoom")
+        {
+            if (music != null)
+            {
+                music.Play();
+            }
+        }
+        else
+        {
+            if (music != null)
+            {
+                music.Stop();
+            }
+        }
         playerController.OnEncounter += StartBattle;
         battleSystem.OnWiningGame += EndGame;
         battleSystem.OnBattleOver += EndBattle;
@@ -41,6 +57,7 @@ public class GameController : MonoBehaviour
     {
         if (won)
         {
+            music.Stop();
             state = GameState.FreeRoam;
             battleSystem.gameObject.SetActive(false);
             worldCam.gameObject.SetActive(true);
@@ -48,13 +65,38 @@ public class GameController : MonoBehaviour
         }
     }
 
+    public void ExitGame()
+    {
+        state = GameState.Ended;
+        SceneManager.LoadScene("Menu");
+    }
+
+    public void RestartGame()
+    {
+        state = GameState.Ended;
+        SceneManager.LoadScene("ShoolYard");
+    }
+
     public void StartBattle()
     {
+        music.Play();
         state = GameState.Battle;
         battleSystem.gameObject.SetActive(true);
         worldCam.gameObject.SetActive(false);
         battleCam.gameObject.SetActive(true);
         battleSystem.StartBattle();
+    }
+
+    public void MuteMusic()
+    {
+        if (music.mute)
+        {
+            music.mute = false;
+        }
+        else
+        {
+            music.mute = true;
+        }
     }
 
     private void Update()
@@ -71,6 +113,12 @@ public class GameController : MonoBehaviour
         }
         else if (state == GameState.Died)
         {
+        }
+        else if (state == GameState.Ended)
+        {
+            battleSystem.gameObject.SetActive(false);
+            worldCam.gameObject.SetActive(true);
+            battleCam.gameObject.SetActive(false);
         }
         else
         {

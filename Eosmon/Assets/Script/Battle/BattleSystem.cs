@@ -17,6 +17,8 @@ public class BattleSystem : MonoBehaviour
     [SerializeField] BattleDialogBox dialogBox;
     [SerializeField] QuestionBase q;
     [SerializeField] GameController gameController;
+    [SerializeField] TImer timer;
+
 
     public event Action<bool> OnBattleOver;
     public event Action<bool> OnWiningGame;
@@ -51,6 +53,7 @@ public class BattleSystem : MonoBehaviour
     IEnumerator PerformPlayerMove(int currentMove)
     {
         bool correct = false;
+        timer.StopTimer();
         switch (q.CorrectAnswer)
         {
             case "A": if (currentMove + 1 == 1) correct = true; break;
@@ -108,7 +111,6 @@ public class BattleSystem : MonoBehaviour
         yield return dialogBox.TypeDialog($"Next question is...{q.Question}");
         yield return new WaitForSeconds(3f);
         dialogBox.setMoveNames(q.SuggestedAnswers);
-
         PlayerAction();
     }
 
@@ -122,7 +124,7 @@ public class BattleSystem : MonoBehaviour
     void PlayerMove()
     {
         state = BattleState.PLayerMove;
-
+        timer.StartTimer();
         dialogBox.EnabledActionSelector(false);
         dialogBox.EnableDialogText(false);
         dialogBox.EnabledMoveSelector(true);
@@ -133,10 +135,25 @@ public class BattleSystem : MonoBehaviour
         if (state == BattleState.PlayerAction)
         {
             HandleActionSelection();
+
         }
         else if (state == BattleState.PLayerMove)
         {
             HandleMoveSelection();
+            if (timer.GetTime() < 7)
+            {
+                timer.timerText.color = Color.red;
+            }
+            else
+            {
+                timer.timerText.color = Color.white;
+            }
+            if (timer.GetTime() == 0)
+            {
+                dialogBox.EnabledMoveSelector(false);
+                dialogBox.EnableDialogText(true);
+                StartCoroutine(PerformPlayerMove(2));
+            }
         }
     }
 
@@ -192,6 +209,14 @@ public class BattleSystem : MonoBehaviour
         }
     }
 
+    IEnumerator HandleRun()
+    {
+
+        yield return dialogBox.TypeDialog($"You coward...");
+        yield return new WaitForSeconds(1f);
+        OnBattleOver(true);
+    }
+
 
     void HandleActionSelection()
     {
@@ -218,8 +243,7 @@ public class BattleSystem : MonoBehaviour
             }
             else if (currentAction == 1)
             {
-                //Run
-
+                StartCoroutine(HandleRun());
             }
 
         }
