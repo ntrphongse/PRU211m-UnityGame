@@ -21,7 +21,6 @@ public class SceneTransition : MonoBehaviour
             else if (sceneIndex == 1)
             {
                 SceneManager.LoadScene(sceneIndex);
-                
             }
         }
     }
