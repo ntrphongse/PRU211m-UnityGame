@@ -10,18 +10,18 @@ public class SceneTransition : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            if (sceneIndex == 2)
+            switch (sceneIndex)
             {
-                SavedPositionManager.savedPositions = new Vector2(
-                    collision.transform.position.x,
-                    collision.transform.position.y - 1f
-                    );
-                SceneManager.LoadScene(sceneIndex);
+                case 1:
+                    break;
+                case 2:
+                    SavedPositionManager.savedPositions = new Vector2(
+                         collision.transform.position.x,
+                         collision.transform.position.y - 1f
+                         );
+                    break;
             }
-            else if (sceneIndex == 1)
-            {
-                SceneManager.LoadScene(sceneIndex);
-            }
+            SceneManager.LoadScene(sceneIndex);
         }
     }
 }
