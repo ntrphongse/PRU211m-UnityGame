@@ -24,6 +24,19 @@ public class NPCController : MonoBehaviour, Interactable
         else
         {
             Debug.Log("NPC interact!");
+            if(SceneManager.GetActiveScene().name == "InfoRoom")
+            {
+                dialog.Lines.Add("Welcome!");
+                dialog.Lines.Add("Don't worry! I won't be testing you!");
+                dialog.Lines.Add("You must be careful with the others though.");
+                dialog.Lines.Add("It's finals season, so everyone can be a bit... weird");
+
+            }else if (SceneManager.GetActiveScene().name == "ShoolYard")
+            {
+                dialog.Lines.Add("Greetings!");
+                dialog.Lines.Add("Welcome to the Fire Phoenix Training-ground");
+                dialog.Lines.Add("Wander around as you may please.");
+            }
             StartCoroutine(DialogManager.Instance.ShowDialog(dialog));
         }
 

@@ -80,10 +80,10 @@ public class BattleDialogBox : MonoBehaviour
         {
             switch (i)
             {
-                case 0: moveText[i].text = answers.A; break;
-                case 1: moveText[i].text = answers.B; break;
-                case 2: moveText[i].text = answers.C; break;
-                case 3: moveText[i].text = answers.D; break;
+                case 0: moveText[i].text = "A" + answers.A; break;
+                case 1: moveText[i].text = "B" + answers.B; break;
+                case 2: moveText[i].text = "C" + answers.C; break;
+                case 3: moveText[i].text = "D" + answers.D; break;
             }
         }
     }
