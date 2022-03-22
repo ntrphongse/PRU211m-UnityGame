@@ -193,6 +193,7 @@ MonoBehaviour:
     m_TabWidth: 24
   m_GlyphTable: []
   m_CharacterTable: []
+
   m_AtlasTextures:
   - {fileID: 28268798066460806}
   m_AtlasTextureIndex: 0
@@ -203,6 +204,7 @@ MonoBehaviour:
   - m_X: 0
     m_Y: 0
     m_Width: 511
+
     m_Height: 511
   m_fontInfo:
     Name: Liberation Sans

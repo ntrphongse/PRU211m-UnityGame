@@ -16,7 +16,7 @@
     "Question": "Which of the following diagram is a Structural diagram",
     "SuggestedAnswers": {
       "A": "Class diagram",
-      "B": "Class diagram",
+      "B": "UML diagram",
       "C": "Use-case diagram",
       "D": "Sequence diagram"
     },
@@ -37,7 +37,7 @@
     "SuggestedAnswers": {
       "A": "Input",
       "B": "Keyboard",
-      "C": "\nInputManager",
+      "C": "InputManager",
       "D": "Mouse"
     },
     "CorrectAnswer": "A"
@@ -48,8 +48,8 @@
     "SuggestedAnswers": {
       "A": "assignment statement",
       "B": "data type",
-      "C": "\nvalue type",
-      "D": "\nclass name"
+      "C": "value type",
+      "D": "class name"
     },
     "CorrectAnswer": "B"
   },
@@ -231,7 +231,7 @@
       "A": "Component testing",
       "B": "Functional testing",
       "C": "System testing",
-      "D": "System testing"
+      "D": "Black-box testing"
     },
     "CorrectAnswer": "B"
   },
@@ -292,7 +292,7 @@
     "Question": "Who would USUALLY perform debugging activities",
     "SuggestedAnswers": {
       "A": "Developers.",
-      "B": "Developers.",
+      "B": "Business Analysist.",
       "C": " Testers.",
       "D": "Incident Managers."
     },
@@ -320,8 +320,6 @@
     "CorrectAnswer": "C"
   },
   
-  
- 
   {
     "Question": "Which type of test design techniques does the following statement best describe a procedure\nto derive test cases based on the specification of a component",
     "SuggestedAnswers": {
@@ -331,7 +329,5 @@
       "D": "Experience Based Techniques."
     },
     "CorrectAnswer": "B"
-  },
-  
-  
+  }  
 ]
