@@ -12,7 +12,6 @@ public class GameController : MonoBehaviour
     [SerializeField] Camera battleCam;
     [SerializeField] AudioSource music;
 
-
     GameState state;
 
     private void Start()
