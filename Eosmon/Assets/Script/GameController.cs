@@ -74,6 +74,18 @@ public class GameController : MonoBehaviour
         battleSystem.StartBattle();
     }
 
+    public void MuteMusic()
+    {
+        if (music.mute)
+        {
+            music.mute = false;
+        }
+        else
+        {
+            music.mute = true;
+        }
+    }
+
     private void Update()
     {
         if (state == GameState.FreeRoam)
