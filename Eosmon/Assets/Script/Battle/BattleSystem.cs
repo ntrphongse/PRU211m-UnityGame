@@ -41,7 +41,7 @@ public class BattleSystem : MonoBehaviour
         yield return dialogBox.TypeDialog($"The lecturer {enemy.Lecturer.Base.Name} appeared.");
         yield return new WaitForSeconds(1f);
         q = enemy.Lecturer.GetRandomQuestion(jsonFile);
-        yield return dialogBox.TypeDialog($"First question is...{q.Question}");
+        yield return dialogBox.TypeDialog($"First question is...\n{q.Question}");
         yield return new WaitForSeconds(3f);
         dialogBox.setMoveNames(q.SuggestedAnswers);
 
@@ -219,6 +219,7 @@ public class BattleSystem : MonoBehaviour
             else if (currentAction == 1)
             {
                 //Run
+
             }
 
         }
