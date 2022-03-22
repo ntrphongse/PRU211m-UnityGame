@@ -16,7 +16,21 @@ public class GameController : MonoBehaviour
 
     private void Start()
     {
-        music.Stop();
+        Scene currentScene = SceneManager.GetActiveScene();
+        if (currentScene.name == "InfoRoom")
+        {
+            if (music != null)
+            {
+                music.Play();
+            }
+        }
+        else
+        {
+            if (music != null)
+            {
+                music.Stop();
+            }
+        }
         playerController.OnEncounter += StartBattle;
         battleSystem.OnWiningGame += EndGame;
         battleSystem.OnBattleOver += EndBattle;
