@@ -33,9 +33,9 @@ public class NPCController : MonoBehaviour, Interactable
 
             }else if (SceneManager.GetActiveScene().name == "ShoolYard")
             {
-                dialog.Lines.Add("Greetings!");
-                dialog.Lines.Add("Welcome to the Fire Phoenix Training-ground");
-                dialog.Lines.Add("Wander around as you may please.");
+                //dialog.Lines.Add("Greetings!");
+                //dialog.Lines.Add("Welcome to the Fire Phoenix Training-ground");
+                //dialog.Lines.Add("Wander around as you may please.");
             }
             StartCoroutine(DialogManager.Instance.ShowDialog(dialog));
         }
