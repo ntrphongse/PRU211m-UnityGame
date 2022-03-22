@@ -192,6 +192,14 @@ public class BattleSystem : MonoBehaviour
         }
     }
 
+    IEnumerator HandleRun()
+    {
+
+        yield return dialogBox.TypeDialog($"You coward...");
+        yield return new WaitForSeconds(1f);
+        OnBattleOver(true);
+    }
+
 
     void HandleActionSelection()
     {
@@ -218,7 +226,6 @@ public class BattleSystem : MonoBehaviour
             }
             else if (currentAction == 1)
             {
-                //Run
 
             }
 

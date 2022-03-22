@@ -1392,6 +1392,7 @@ MonoBehaviour:
   battleSystem: {fileID: 220806580}
   worldCam: {fileID: 3793364}
   battleCam: {fileID: 1313328446}
+  music: {fileID: 934504482}
 --- !u!4 &637289562
 Transform:
   m_ObjectHideFlags: 0
