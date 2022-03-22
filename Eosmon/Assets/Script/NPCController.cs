@@ -9,7 +9,7 @@ public class NPCController : MonoBehaviour, Interactable
     [SerializeField] Dialog dialog;
     [SerializeField] GameController gameController;
 
-    public void Interact()
+    public void Interact(Collider2D collider)
     {
         // Create a temporary reference to the current scene.
         Scene currentScene = SceneManager.GetActiveScene();
@@ -19,7 +19,11 @@ public class NPCController : MonoBehaviour, Interactable
         
         if (sceneName == "Room")
         {
-            gameController.StartBattle();
+            GameObject npcBattle = GameObject.Find("NPC");
+            if (collider.name == "NPC")
+                gameController.StartBattle();
+            else
+                StartCoroutine(DialogManager.Instance.ShowDialog(dialog));
         }
         else
         {

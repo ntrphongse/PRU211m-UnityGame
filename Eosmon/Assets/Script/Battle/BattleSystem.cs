@@ -109,7 +109,7 @@ public class BattleSystem : MonoBehaviour
     {
         state = BattleState.EnemyMove;
         q = enemy.Lecturer.GetRandomQuestion(jsonFile);
-        yield return dialogBox.TypeDialog($"Next question is...{q.Question}");
+        yield return dialogBox.TypeDialog($"Next question is...\n{q.Question}");
         yield return new WaitForSeconds(3f);
         dialogBox.setMoveNames(q.SuggestedAnswers);
         PlayerAction();
