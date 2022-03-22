@@ -830,8 +830,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialog:
     lines:
-    - Hillo :>
-    - Welcome to the yard, enjoy wandering around!
+    - Greetings!
+    - Welcome to the Fire Phoenix Training-ground
+    - Wander around as you may please.
   gameController: {fileID: 673789539}
 --- !u!1 &342353905
 GameObject:
@@ -1755,6 +1756,7 @@ MonoBehaviour:
   battleSystem: {fileID: 1342591262}
   worldCam: {fileID: 2022850266}
   battleCam: {fileID: 1892789064}
+  music: {fileID: 0}
 --- !u!4 &673789540
 Transform:
   m_ObjectHideFlags: 0
@@ -12640,6 +12642,7 @@ MonoBehaviour:
   dialogBox: {fileID: 1486893405}
   q: {fileID: 0}
   gameController: {fileID: 0}
+  timer: {fileID: 0}
 --- !u!4 &1342591263
 Transform:
   m_ObjectHideFlags: 0

@@ -1955,6 +1955,7 @@ MonoBehaviour:
   _base: {fileID: 11400000, guid: 843c04624645de14aa0775c7fd6a15f6, type: 2}
   level: 5
   isPlayerUnit: 0
+  hitSound: {fileID: 0}
 --- !u!1 &975797102
 GameObject:
   m_ObjectHideFlags: 0
@@ -6278,6 +6279,7 @@ MonoBehaviour:
   _base: {fileID: 11400000, guid: b925c0ee1041908408f51bd1ef2c1e02, type: 2}
   level: 5
   isPlayerUnit: 1
+  hitSound: {fileID: 0}
 --- !u!1 &2008741538
 GameObject:
   m_ObjectHideFlags: 0

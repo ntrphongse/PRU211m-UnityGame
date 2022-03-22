@@ -587,7 +587,8 @@ MonoBehaviour:
   enemyHud: {fileID: 1146780286}
   dialogBox: {fileID: 1808592297}
   q: {fileID: 0}
-  gameController: {fileID: 0}
+  gameController: {fileID: 637289561}
+  timer: {fileID: 0}
 --- !u!4 &220806581
 Transform:
   m_ObjectHideFlags: 0
@@ -1392,6 +1393,7 @@ MonoBehaviour:
   battleSystem: {fileID: 220806580}
   worldCam: {fileID: 3793364}
   battleCam: {fileID: 1313328446}
+  music: {fileID: 0}
 --- !u!4 &637289562
 Transform:
   m_ObjectHideFlags: 0
