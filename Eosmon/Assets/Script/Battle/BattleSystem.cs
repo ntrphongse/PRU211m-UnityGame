@@ -21,6 +21,10 @@ public class BattleSystem : MonoBehaviour
     [SerializeField] TImer timer;
     [SerializeField] AudioSource bossMusic;
     [SerializeField] AudioSource comeBackMusic;
+    [SerializeField] Image mainMenu;
+    [SerializeField] Text zText;
+
+
 
 
     private bool IsBossFight;
@@ -38,6 +42,14 @@ public class BattleSystem : MonoBehaviour
     int currentMove;
     public void StartBattle(string npcName)
     {
+        if(mainMenu != null)
+        {
+            mainMenu.enabled = false;
+        }
+        if(zText != null)
+        {
+            zText.enabled = false;
+        }
         noOfFaints = 0;
         PlayerPrefs.SetInt(CorrectAnswersDuringBoss, 0);
         StartCoroutine(SetupBattle(npcName));

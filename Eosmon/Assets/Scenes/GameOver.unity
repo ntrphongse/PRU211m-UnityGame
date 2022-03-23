@@ -450,6 +450,9 @@ MonoBehaviour:
   level: 5
   isPlayerUnit: 0
   hitSound: {fileID: 0}
+  animator: {fileID: 0}
+  bossWalkingSound: {fileID: 0}
+  background: {fileID: 0}
 --- !u!1 &152542684
 GameObject:
   m_ObjectHideFlags: 0
@@ -545,6 +548,7 @@ RectTransform:
   - {fileID: 1651076775}
   - {fileID: 1124660726}
   - {fileID: 711899369}
+  - {fileID: 1350858608}
   - {fileID: 577923128}
   - {fileID: 697942955}
   m_Father: {fileID: 0}
@@ -1078,7 +1082,7 @@ Transform:
   m_Children:
   - {fileID: 1816673}
   m_Father: {fileID: 152542688}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!222 &577923129
 CanvasRenderer:
@@ -1250,6 +1254,9 @@ MonoBehaviour:
   level: 5
   isPlayerUnit: 1
   hitSound: {fileID: 0}
+  animator: {fileID: 0}
+  bossWalkingSound: {fileID: 0}
+  background: {fileID: 0}
 --- !u!1 &697942954
 GameObject:
   m_ObjectHideFlags: 0
@@ -1284,7 +1291,7 @@ RectTransform:
   m_Children:
   - {fileID: 1844416612}
   m_Father: {fileID: 152542688}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1738,6 +1745,7 @@ MonoBehaviour:
   nameText: {fileID: 791906499}
   levelText: {fileID: 955319867}
   kpBar: {fileID: 1742682648}
+  kpImage: {fileID: 0}
 --- !u!1 &784169686
 GameObject:
   m_ObjectHideFlags: 0
@@ -3083,12 +3091,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1350858601}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.57, y: 0.0539, z: 0}
-  m_LocalScale: {x: 1.687, y: 1.9661, z: 1}
+  m_LocalPosition: {x: 8.421, y: 3.2079997, z: -3608.9998}
+  m_LocalScale: {x: 67.6487, y: 78.84061, z: 40.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_Father: {fileID: 152542688}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1571705766
 GameObject:
@@ -3185,6 +3193,7 @@ MonoBehaviour:
   nameText: {fileID: 565741328}
   levelText: {fileID: 1831458300}
   kpBar: {fileID: 859404269}
+  kpImage: {fileID: 0}
 --- !u!1 &1651076774
 GameObject:
   m_ObjectHideFlags: 0
@@ -3845,11 +3854,15 @@ MonoBehaviour:
   player: {fileID: 626061787}
   playerHud: {fileID: 1571705770}
   enemy: {fileID: 116749958}
+  boss: {fileID: 0}
   enemyHud: {fileID: 773724688}
   dialogBox: {fileID: 362414507}
   q: {fileID: 0}
-  gameController: {fileID: 0}
   timer: {fileID: 0}
+  bossMusic: {fileID: 0}
+  comeBackMusic: {fileID: 0}
+  mainMenu: {fileID: 0}
+  zText: {fileID: 0}
 --- !u!4 &1900204355
 Transform:
   m_ObjectHideFlags: 0
