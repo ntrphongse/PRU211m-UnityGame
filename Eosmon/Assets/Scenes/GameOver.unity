@@ -452,6 +452,7 @@ MonoBehaviour:
   hitSound: {fileID: 0}
   animator: {fileID: 0}
   bossWalkingSound: {fileID: 0}
+  finalMovementSound: {fileID: 0}
   background: {fileID: 0}
 --- !u!1 &152542684
 GameObject:
@@ -545,10 +546,10 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1350858608}
   - {fileID: 1651076775}
   - {fileID: 1124660726}
   - {fileID: 711899369}
-  - {fileID: 1350858608}
   - {fileID: 577923128}
   - {fileID: 697942955}
   m_Father: {fileID: 0}
@@ -1256,6 +1257,7 @@ MonoBehaviour:
   hitSound: {fileID: 0}
   animator: {fileID: 0}
   bossWalkingSound: {fileID: 0}
+  finalMovementSound: {fileID: 0}
   background: {fileID: 0}
 --- !u!1 &697942954
 GameObject:
@@ -1448,7 +1450,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 152542688}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2546,7 +2548,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 152542688}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2926,7 +2928,7 @@ GameObject:
   - component: {fileID: 1350858604}
   - component: {fileID: 1350858603}
   - component: {fileID: 1350858602}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -3096,7 +3098,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 152542688}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1571705766
 GameObject:
@@ -3225,7 +3227,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 152542688}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3852,6 +3854,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jsonFile: {fileID: 4900000, guid: 2a87ad7ec5d82294b9f46139aa78bd84, type: 3}
   player: {fileID: 626061787}
+  hero: {fileID: 0}
   playerHud: {fileID: 1571705770}
   enemy: {fileID: 116749958}
   boss: {fileID: 0}
@@ -3863,6 +3866,7 @@ MonoBehaviour:
   comeBackMusic: {fileID: 0}
   mainMenu: {fileID: 0}
   zText: {fileID: 0}
+  _bossCanvasGroup: {fileID: 0}
 --- !u!4 &1900204355
 Transform:
   m_ObjectHideFlags: 0

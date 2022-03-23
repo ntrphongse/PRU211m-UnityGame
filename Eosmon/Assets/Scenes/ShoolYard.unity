@@ -1532,6 +1532,7 @@ MonoBehaviour:
   hitSound: {fileID: 0}
   animator: {fileID: 0}
   bossWalkingSound: {fileID: 0}
+  finalMovementSound: {fileID: 0}
   background: {fileID: 0}
 --- !u!1 &844657730
 GameObject:
@@ -11755,6 +11756,7 @@ MonoBehaviour:
   hitSound: {fileID: 0}
   animator: {fileID: 0}
   bossWalkingSound: {fileID: 0}
+  finalMovementSound: {fileID: 0}
   background: {fileID: 0}
 --- !u!1 &1223386917
 GameObject:
@@ -11943,6 +11945,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jsonFile: {fileID: 4900000, guid: 2a87ad7ec5d82294b9f46139aa78bd84, type: 3}
   player: {fileID: 1201349932}
+  hero: {fileID: 0}
   playerHud: {fileID: 2009739094}
   enemy: {fileID: 793943649}
   boss: {fileID: 0}
@@ -11952,6 +11955,10 @@ MonoBehaviour:
   timer: {fileID: 0}
   bossMusic: {fileID: 0}
   comeBackMusic: {fileID: 0}
+  mainMenu: {fileID: 0}
+  zText: {fileID: 0}
+  _bossCanvasGroup: {fileID: 0}
+  battleCam: {fileID: 0}
 --- !u!4 &1342591263
 Transform:
   m_ObjectHideFlags: 0
@@ -20949,8 +20956,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 706.8289, y: -509.40115}
-  m_SizeDelta: {x: 506.342, y: 61.026}
+  m_AnchoredPosition: {x: 676.7318, y: -509.40115}
+  m_SizeDelta: {x: 566.536, y: 61.026}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1714319617
 MonoBehaviour:

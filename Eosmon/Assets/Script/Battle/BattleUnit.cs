@@ -15,18 +15,15 @@ public class BattleUnit : MonoBehaviour
 
     [SerializeField] Animator animator;
     [SerializeField] AudioSource bossWalkingSound;
+    [SerializeField] AudioSource finalMovementSound;
+
 
     [SerializeField] Image background;
 
-
     private string _name;
-    public void Update()
-    {
-    }
     Image image;
     Vector3 originalPos;
     Color ogColor;
-
     private void Awake()
     {
         image = GetComponent<Image>();
@@ -65,7 +62,7 @@ public class BattleUnit : MonoBehaviour
 
     public void PlayEnterAnimation(string npcName)
     {
-        if (isPlayerUnit)
+        if (isPlayerUnit && npcName != "Hero")
         {
             image.transform.localPosition = new Vector3(-500f, originalPos.y);
         }
@@ -76,8 +73,12 @@ public class BattleUnit : MonoBehaviour
         if (npcName == "01101100011010000110101101110000")
         {
             bossWalkingSound.Play();
-            background.transform.DOShakePosition(15f, 7f);
-            image.transform.DOLocalMoveX(250f, 13f).OnComplete(stopBossWalking);
+            background.transform.DOShakePosition(18f, 10f);
+            image.transform.DOLocalMoveX(250f, 15f).OnComplete(stopBossWalking);
+        }
+        else if (npcName == "Hero")
+        {
+            image.transform.DOLocalMoveX(-230f, 1f);
         }
         else
         {
@@ -88,9 +89,13 @@ public class BattleUnit : MonoBehaviour
     public void PlayAttacAnimation()
     {
         var seq = DOTween.Sequence();
-        if (isPlayerUnit)
+        if (isPlayerUnit && _name != "Hero")
         {
             seq.Append(image.transform.DOLocalMoveX(originalPos.x + 50f, 0.25f));
+        }
+        else if (isPlayerUnit && _name == "Hero")
+        {
+            seq.Append(image.transform.DOLocalMoveX(-230f + 50f, 0.25f));
         }
         else
         {
@@ -108,10 +113,33 @@ public class BattleUnit : MonoBehaviour
         {
             seq.Append(image.transform.DOLocalMoveX(250f, 0.25f));
         }
+        else if (_name == "Hero")
+        {
+            seq.Append(image.transform.DOLocalMoveX(-230f, 0.25f));
+        }
         else
         {
             seq.Append(image.transform.DOLocalMoveX(originalPos.x, 0.25f));
         }
+    }
+
+    public void PlayFinalMovementAnimation()
+    {
+        image.transform.DOLocalMoveX(0f, 0.25f).OnComplete(() =>
+        {
+            finalMovementSound.Play();
+            animator.Play("FinalMovement");
+        });
+    }
+
+    public void MoveEvent()
+    {
+        image.transform.DOLocalMoveX(200f, 0.25f);
+    }
+
+    public void FinishEvent()
+    {
+        image.transform.DOLocalMoveX(-230f, 1f);
     }
 
     public void PlayHitAnimation()
@@ -120,6 +148,16 @@ public class BattleUnit : MonoBehaviour
         hitSound.Play();
         seq.Append(image.DOColor(Color.gray, 0.1f));
         seq.Append(image.DOColor(ogColor, 0.1f));
+    }
+
+    public void LoopHitAnimation()
+    {
+        var seq = DOTween.Sequence();
+        for (int i = 0; i < 30; i++)
+        {
+            seq.Append(image.DOColor(Color.gray, 0.1f));
+            seq.Append(image.DOColor(ogColor, 0.1f));
+        }
     }
     public void PlayHealAnimation()
     {

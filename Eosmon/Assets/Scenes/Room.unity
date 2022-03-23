@@ -658,6 +658,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jsonFile: {fileID: 4900000, guid: 2a87ad7ec5d82294b9f46139aa78bd84, type: 3}
   player: {fileID: 1931269887}
+  hero: {fileID: 0}
   playerHud: {fileID: 1348342231}
   enemy: {fileID: 909246117}
   boss: {fileID: 0}
@@ -669,6 +670,8 @@ MonoBehaviour:
   comeBackMusic: {fileID: 0}
   mainMenu: {fileID: 100994408}
   zText: {fileID: 1480181621}
+  _bossCanvasGroup: {fileID: 0}
+  battleCam: {fileID: 0}
 --- !u!4 &220806581
 Transform:
   m_ObjectHideFlags: 0
@@ -2536,6 +2539,7 @@ MonoBehaviour:
   hitSound: {fileID: 706392191}
   animator: {fileID: 0}
   bossWalkingSound: {fileID: 0}
+  finalMovementSound: {fileID: 0}
   background: {fileID: 0}
 --- !u!1 &934504481
 GameObject:
@@ -2566,7 +2570,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 44843c30064692a498746813c62a9af9, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.28
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -7383,6 +7387,7 @@ MonoBehaviour:
   hitSound: {fileID: 706392191}
   animator: {fileID: 0}
   bossWalkingSound: {fileID: 0}
+  finalMovementSound: {fileID: 0}
   background: {fileID: 0}
 --- !u!1 &1947876317
 GameObject:

@@ -8,7 +8,7 @@ public class NPCController : MonoBehaviour, Interactable
 {
     [SerializeField] Dialog dialog;
     [SerializeField] GameController gameController;
-   
+
 
     public void Interact(Collider2D collider)
     {
@@ -35,7 +35,8 @@ public class NPCController : MonoBehaviour, Interactable
                 dialog.Lines.Add("Don't worry! I won't be testing you!");
                 dialog.Lines.Add("You must be careful with the others though.");
                 dialog.Lines.Add("It's finals season, so everyone can be a bit... weird");
-
+                dialog.Lines.Add("Especially those in the LaSt Ro0oM o0n tHe LeFt");
+                dialog.Lines.Add("That's it! Have fun!");
             }
             else if (SceneManager.GetActiveScene().name == "ShoolYard")
             {

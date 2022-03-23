@@ -82,7 +82,6 @@ public class GameController : MonoBehaviour
         {
             music.Play();
         }
-        Debug.Log(npcName);
         state = GameState.Battle;
         battleSystem.gameObject.SetActive(true);
         worldCam.gameObject.SetActive(false);
