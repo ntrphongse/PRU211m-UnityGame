@@ -1144,7 +1144,7 @@ GameObject:
   - component: {fileID: 518135368}
   - component: {fileID: 518135367}
   m_Layer: 5
-  m_Name: ImgPlay
+  m_Name: ImgToMainMenuInRoom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
