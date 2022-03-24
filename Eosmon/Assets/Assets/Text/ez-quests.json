@@ -1,0 +1,53 @@
+[
+  
+  {
+    "Question": "1 + 1 = ?",
+    "SuggestedAnswers": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4"
+    },
+    "CorrectAnswer": "B"
+  },
+  {
+    "Question": "15 + 3 = ?",
+    "SuggestedAnswers": {
+      "A": "18",
+      "B": "20",
+      "C": "12",
+      "D": "16"
+    },
+    "CorrectAnswer": "A"
+  },
+  {
+    "Question": "1500 - 0 = ?",
+    "SuggestedAnswers": {
+      "A": "1800",
+      "B": "150",
+      "C": "1500",
+      "D": "15000"
+    },
+    "CorrectAnswer": "C"
+  },
+  {
+    "Question": "10 % 3 = ?",
+    "SuggestedAnswers": {
+      "A": "33",
+      "B": "1",
+      "C": "10",
+      "D": "None of others"
+    },
+    "CorrectAnswer": "B"
+  },
+  {
+    "Question": "15 * 26 = ?",
+    "SuggestedAnswers": {
+      "A": "330",
+      "B": "360",
+      "C": "380",
+      "D": "390"
+    },
+    "CorrectAnswer": "D"
+  },
+]

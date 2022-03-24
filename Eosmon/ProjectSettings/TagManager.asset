@@ -7,6 +7,7 @@ TagManager:
   - BattleCamera
   - music
   - sfx
+  - overlayUI
   layers:
   - Default
   - TransparentFX

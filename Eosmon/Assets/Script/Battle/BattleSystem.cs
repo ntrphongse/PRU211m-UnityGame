@@ -10,7 +10,8 @@ public enum BattleState { Start, PlayerAction, PLayerMove, EnemyMove, Busy, Boss
 public class BattleSystem : MonoBehaviour
 {
     public static readonly string CorrectAnswersDuringBoss = "CorrectAnswersDuringBoss";
-    public TextAsset jsonFile;
+    public TextAsset learning;
+    public TextAsset questionEasy;
 
     [SerializeField] BattleUnit player;
     [SerializeField] BattleUnit hero;
@@ -62,6 +63,14 @@ public class BattleSystem : MonoBehaviour
 
     public IEnumerator SetupBattle(string npcName)
     {
+        if (GameObject.Find("RoomBGMUSIC") != null)
+        {
+            GameObject obj = GameObject.Find("RoomBGMUSIC");
+            obj.SetActive(false);
+        }
+        GameObject.Find("score").SetActive(false);
+        GameObject.Find("Press [ Z ]").SetActive(false);
+        GameObject.Find("ImgToMainMenuInRoom").SetActive(false);
 
 
         IsBossFight = false;
@@ -73,7 +82,15 @@ public class BattleSystem : MonoBehaviour
 
         yield return dialogBox.TypeDialog($"The lecturer {npcName} appeared.");
         yield return new WaitForSeconds(1f);
-        q = enemy.Lecturer.GetRandomQuestion(jsonFile);
+        if (GlobalVariables.difficulty == 0)
+        {
+            q = enemy.Lecturer.GetRandomQuestion(questionEasy);
+        }
+        else if (GlobalVariables.difficulty == 1)
+        {
+            q = enemy.Lecturer.GetRandomQuestion(learning);
+        }
+
         if (npcName == "BossNPC")
         {
             yield return dialogBox.TypeDialog($"You shouldn't have come here.");
@@ -86,7 +103,7 @@ public class BattleSystem : MonoBehaviour
             yield return new WaitForSeconds(2f);
         }
         yield return dialogBox.TypeDialog($"First question is...\n{q.Question}");
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
         if (npcName == "BossNPC")
         {
             bossMusic.Play();
@@ -95,19 +112,26 @@ public class BattleSystem : MonoBehaviour
             enemy.Lecturer.TakeDamage(q, player.Lecturer, 100000);
             yield return enemyHud.UpdateKP();
             yield return dialogBox.TypeDialog(".................??? \n No, this cannot be!?!?");
-            yield return new WaitForSeconds(3f);
+            yield return new WaitForSeconds(2f);
             yield return dialogBox.TypeDialog("You fool! You have doomed us all!!!");
-            yield return new WaitForSeconds(3f);
+            yield return new WaitForSeconds(2f);
             enemy.PLayFaintAnimation();
 
             IsBossFight = true;
             boss.Setup("01101100011010000110101101110000");
             enemyHud.SetData(boss.Lecturer);
             yield return dialogBox.TypeDialog($"The lecturer 01101100011010000110101101110000 appeared.");
-            yield return new WaitForSeconds(15f);
-            q = enemy.Lecturer.GetRandomQuestion(jsonFile);
+            yield return new WaitForSeconds(15f); 
+            if (GlobalVariables.difficulty == 0)
+            {
+                q = enemy.Lecturer.GetRandomQuestion(questionEasy);
+            }
+            else if (GlobalVariables.difficulty == 1)
+            {
+                q = enemy.Lecturer.GetRandomQuestion(learning);
+            }
             yield return dialogBox.TypeDialog($"First question is...\n{q.Question}");
-            yield return new WaitForSeconds(3f);
+            yield return new WaitForSeconds(2f);
         }
 
         dialogBox.setMoveNames(q.SuggestedAnswers);
@@ -116,8 +140,6 @@ public class BattleSystem : MonoBehaviour
 
     IEnumerator PerformPlayerMove(int currentMove)
     {
-
-
 
         bool correct = false;
         timer.StopTimer();
@@ -150,7 +172,6 @@ public class BattleSystem : MonoBehaviour
                 if (IsComeback)
                 {
                     isLecturerFainted = boss.Lecturer.TakeDamage(q, player.Lecturer, 10);
-
                 }
                 else
                 {
@@ -315,10 +336,17 @@ public class BattleSystem : MonoBehaviour
 
     IEnumerator EnemyMove()
     {
-        state = BattleState.EnemyMove;
-        q = enemy.Lecturer.GetRandomQuestion(jsonFile);
+        state = BattleState.EnemyMove; 
+        if (GlobalVariables.difficulty == 0)
+        {
+            q = enemy.Lecturer.GetRandomQuestion(questionEasy);
+        }
+        else if (GlobalVariables.difficulty == 1)
+        {
+            q = enemy.Lecturer.GetRandomQuestion(learning);
+        }
         yield return dialogBox.TypeDialog($"Next question is...\n{q.Question}");
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
         dialogBox.setMoveNames(q.SuggestedAnswers);
         PlayerAction();
     }
