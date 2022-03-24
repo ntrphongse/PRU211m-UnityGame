@@ -628,7 +628,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a796deb69791aa4891bedda091350f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jsonFile: {fileID: 4900000, guid: 2a87ad7ec5d82294b9f46139aa78bd84, type: 3}
+  learning: {fileID: 4900000, guid: 6ef3c7573734ed346b3a148f035b6b38, type: 3}
+  questionEasy: {fileID: 4900000, guid: 2a87ad7ec5d82294b9f46139aa78bd84, type: 3}
   player: {fileID: 1931269887}
   hero: {fileID: 903456841}
   playerHud: {fileID: 1348342231}
@@ -1529,6 +1530,8 @@ MonoBehaviour:
   worldCam: {fileID: 3793364}
   battleCam: {fileID: 1313328446}
   music: {fileID: 1892130192}
+  roomMusic: {fileID: 0}
+  scoreText: {fileID: 0}
 --- !u!4 &637289562
 Transform:
   m_ObjectHideFlags: 0
