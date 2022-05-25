@@ -34,6 +34,24 @@ public class BattleSystem : MonoBehaviour
 
     public IEnumerator SetupBattle()
     {
+        if (GameObject.Find("RoomBGMUSIC") != null)
+        {
+            GameObject obj = GameObject.Find("RoomBGMUSIC");
+            obj.SetActive(false);
+        }
+        if (GameObject.Find("score") != null)
+        {
+            GameObject.Find("score").SetActive(false);
+        }
+        if (GameObject.Find("Press [ Z ]") != null)
+        {
+            GameObject.Find("Press [ Z ]").SetActive(false);
+        }
+        if (GameObject.Find("ImgToMainMenuInRoom") != null)
+        {
+            GameObject.Find("ImgToMainMenuInRoom").SetActive(false);
+        }
+
 
         player.Setup();
         enemy.Setup();
