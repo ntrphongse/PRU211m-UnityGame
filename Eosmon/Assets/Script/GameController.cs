@@ -7,21 +7,27 @@ using UnityEngine.SceneManagement;
 public enum GameState { FreeRoam, Battle, Dialog, Died, Finished, Ended }
 public class GameController : MonoBehaviour
 {
+    [SerializeField] SpawnPlayers spawnPlayers;
     [SerializeField] PlayerMovement playerController;
     [SerializeField] BattleSystem battleSystem;
     [SerializeField] Camera worldCam;
+    [SerializeField] Follow follow;
     [SerializeField] Camera battleCam;
     [SerializeField] AudioSource music;
     [SerializeField] AudioSource roomMusic;
     [SerializeField] Text scoreText;
-
     GameState state;
-
     private void Start()
     {
         if (scoreText != null)
             scoreText.text = "Your Score: " + GlobalVariables.totalScore;
         Scene currentScene = SceneManager.GetActiveScene();
+        if (spawnPlayers != null)
+        {
+            var player = spawnPlayers.Spawn();
+            playerController = player.GetComponent<PlayerMovement>();
+            follow.player = player.transform;
+        }
         if (currentScene.name == "InfoRoom")
         {
             if (music != null)
@@ -69,7 +75,7 @@ public class GameController : MonoBehaviour
             state = GameState.FreeRoam;
             battleSystem.gameObject.SetActive(false);
             worldCam.gameObject.SetActive(true);
-            battleCam.gameObject.SetActive(false); 
+            battleCam.gameObject.SetActive(false);
             if (scoreText != null)
                 scoreText.text = "Your Score: " + GlobalVariables.totalScore;
         }

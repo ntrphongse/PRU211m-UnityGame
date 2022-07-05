@@ -32,4 +32,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/InfoRoom.unity
     guid: 35dab8a7e5e048048b9b7995e1ea3126
+  - enabled: 1
+    path: Assets/Scenes/Lobby.unity
+    guid: 80cecc5607867a240b33dbd3a9c6e49e
+  - enabled: 1
+    path: Assets/Scenes/Loading.unity
+    guid: 2b7b3e047051529458af6925dacdf002
   m_configObjects: {}

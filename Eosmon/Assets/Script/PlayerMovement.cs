@@ -46,7 +46,9 @@ public class PlayerMovement : MonoBehaviour
                     targetPos.x += input.x;
                     targetPos.y += input.y;
                     if (IsWalkable(targetPos))
+                    {
                         StartCoroutine(Move(targetPos));
+                    }
                 }
             }
             animator.SetBool("isMoving", isMoving);
