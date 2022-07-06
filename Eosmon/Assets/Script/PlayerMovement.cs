@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using UnityEngine.SceneManagement;
-
+using Photon.Pun;
 public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed;
@@ -18,45 +18,51 @@ public class PlayerMovement : MonoBehaviour
 
     public event Action<string> OnEncounter;
 
+    PhotonView view;
+
     private void Awake()
     {
         animator = GetComponent<Animator>();
+        view = GetComponent<PhotonView>();
     }
 
     public void HandleUpdate()
     {
-        if (SceneManager.GetActiveScene().name == "GameOver")
+        if (!PhotonNetwork.IsConnected || (PhotonNetwork.IsConnected && view.IsMine))
         {
-            animator.SetBool("IsDead", true);
-        }
-        else
-        {
-
-            if (!isMoving)
+            if (animator != null)
             {
-                input.x = Input.GetAxisRaw("Horizontal");
-                input.y = Input.GetAxisRaw("Vertical");
-                if (input.x != 0) input.y = 0;
-                if (input != Vector2.zero)
+                if (SceneManager.GetActiveScene().name == "GameOver")
                 {
-                    animator.SetFloat("moveX", input.x);
-                    animator.SetFloat("moveY", input.y);
+                    animator.SetBool("IsDead", true);
+                }
+                else
+                {
 
-                    var targetPos = transform.position;
-                    targetPos.x += input.x;
-                    targetPos.y += input.y;
-                    if (IsWalkable(targetPos))
+                    if (!isMoving)
                     {
-                        StartCoroutine(Move(targetPos));
+                        input.x = Input.GetAxisRaw("Horizontal");
+                        input.y = Input.GetAxisRaw("Vertical");
+                        if (input.x != 0) input.y = 0;
+                        if (input != Vector2.zero)
+                        {
+                            animator.SetFloat("moveX", input.x);
+                            animator.SetFloat("moveY", input.y);
+
+                            var targetPos = transform.position;
+                            targetPos.x += input.x;
+                            targetPos.y += input.y;
+                            if (IsWalkable(targetPos))
+                            {
+                                StartCoroutine(Move(targetPos));
+                            }
+                        }
                     }
+                    animator.SetBool("isMoving", isMoving);
+                    if (Input.GetKeyDown(KeyCode.Z)) Interact();
                 }
             }
-            animator.SetBool("isMoving", isMoving);
-            if (Input.GetKeyDown(KeyCode.Z)) Interact();
-
         }
-
-
     }
     void Interact()
     {

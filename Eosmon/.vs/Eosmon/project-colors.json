@@ -10,7 +10,22 @@
       "ProjectGuid": "fda5b5d9-fd0a-f4ca-accc-9cf5779ec79f",
       "DisplayName": "Assembly-CSharp",
       "ColorIndex": 0
+    },
+    "d5341828-a3f2-b51a-e8d4-8e71c68219d8": {
+      "ProjectGuid": "d5341828-a3f2-b51a-e8d4-8e71c68219d8",
+      "DisplayName": "Assembly-CSharp-firstpass",
+      "ColorIndex": 1
+    },
+    "71c73c61-36e6-502c-c8dc-506629a1da8f": {
+      "ProjectGuid": "71c73c61-36e6-502c-c8dc-506629a1da8f",
+      "DisplayName": "PhotonUnityNetworking",
+      "ColorIndex": 2
+    },
+    "6a03f4ba-7c10-74c5-c083-4afb3c43c855": {
+      "ProjectGuid": "6a03f4ba-7c10-74c5-c083-4afb3c43c855",
+      "DisplayName": "PhotonRealtime",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 4
 }

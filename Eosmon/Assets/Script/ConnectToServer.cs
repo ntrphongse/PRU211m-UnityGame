@@ -4,9 +4,15 @@ using UnityEngine;
 using Photon.Pun;
 public class ConnectToServer : MonoBehaviourPunCallbacks
 {
+    public bool isFirstTimeJoin;
     private void Start()
     {
-        PhotonNetwork.ConnectUsingSettings();
+        if (!PhotonNetwork.IsConnected)
+        {
+            PhotonNetwork.AutomaticallySyncScene = true;
+            isFirstTimeJoin = true;
+            PhotonNetwork.ConnectUsingSettings();
+        }
     }
 
     public override void OnConnectedToMaster()
@@ -16,7 +22,13 @@ public class ConnectToServer : MonoBehaviourPunCallbacks
 
     public override void OnJoinedLobby()
     {
-        PhotonNetwork.LoadLevel("Lobby");
+        Debug.Log("oowowow");
+        Debug.Log(isFirstTimeJoin);
+        if (isFirstTimeJoin)
+        {
+            isFirstTimeJoin = false;
+            PhotonNetwork.LoadLevel("Lobby");
+        }
     }
 
 }
