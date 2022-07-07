@@ -22,8 +22,6 @@ public class ConnectToServer : MonoBehaviourPunCallbacks
 
     public override void OnJoinedLobby()
     {
-        Debug.Log("oowowow");
-        Debug.Log(isFirstTimeJoin);
         if (isFirstTimeJoin)
         {
             isFirstTimeJoin = false;

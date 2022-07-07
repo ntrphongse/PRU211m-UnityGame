@@ -10,7 +10,7 @@ public class InstituteEntrance : MonoBehaviourPunCallbacks
     {
         try
         {
-            PhotonNetwork.CreateRoom("FPT_HCM");
+            PhotonNetwork.CreateRoom("ShoolYard");
         }
         catch (Exception ex)
         {
@@ -25,7 +25,7 @@ public class InstituteEntrance : MonoBehaviourPunCallbacks
 
     public void JoinRoom()
     {
-        PhotonNetwork.JoinRoom("FPT_HCM");
+        PhotonNetwork.JoinRoom("ShoolYard");
     }
     public override void OnJoinedRoom()
     {

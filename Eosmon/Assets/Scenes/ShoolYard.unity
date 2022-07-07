@@ -1885,7 +1885,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneIndex: 2
-  view: {fileID: -1098535472833682656, guid: 7abfab503f60cdb4bb7f5da49e90036c, type: 3}
+  loadingIngame: {fileID: 0}
 --- !u!61 &844657732
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20785,7 +20785,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneIndex: 2
-  view: {fileID: 0}
+  loadingIngame: {fileID: 0}
 --- !u!61 &1438386939
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22035,7 +22035,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneIndex: 2
-  view: {fileID: 0}
+  loadingIngame: {fileID: 0}
 --- !u!1 &1970765004
 GameObject:
   m_ObjectHideFlags: 0
@@ -22067,7 +22067,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneIndex: 7
-  view: {fileID: 0}
+  loadingIngame: {fileID: 0}
 --- !u!61 &1970765006
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22499,7 +22499,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneIndex: 8
-  view: {fileID: 0}
+  loadingIngame: {fileID: 0}
 --- !u!61 &2031780529
 BoxCollider2D:
   m_ObjectHideFlags: 0

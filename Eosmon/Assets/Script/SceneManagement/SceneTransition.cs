@@ -8,7 +8,7 @@ using System;
 public class SceneTransition : MonoBehaviourPunCallbacks
 {
     [SerializeField] private int sceneIndex;
-    private string sceneName;
+    public LoadingIngame loadingIngame;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -38,7 +38,7 @@ public class SceneTransition : MonoBehaviourPunCallbacks
                          );
                     break;
             }
-            this.sceneName = NameFromIndex(sceneIndex);
+            PlayerPrefs.SetString("sceneName", NameFromIndex(sceneIndex));
             if (!PhotonNetwork.IsConnected)
             {
                 SceneManager.LoadScene(sceneIndex);
@@ -47,7 +47,7 @@ public class SceneTransition : MonoBehaviourPunCallbacks
             {
                 if (PhotonNetwork.InRoom)
                 {
-                    CreateRoom(this.sceneName);
+                    PhotonNetwork.LoadLevel("LoadingIngame");
                 }
             }
         }
@@ -63,51 +63,5 @@ public class SceneTransition : MonoBehaviourPunCallbacks
     }
 
 
-    public void CreateRoom(string sceneName)
-    {
-        try
-        {
-            this.sceneName = sceneName;
-            Debug.Log(this.sceneName);
-            PhotonNetwork.LeaveRoom();
-        }
-        catch (Exception ex)
-        {
-            Debug.LogException(ex);
-        }
-    }
-    public override void OnConnectedToMaster()
-    {
-        Debug.Log(this.sceneName);
-        PhotonNetwork.JoinLobby();
-    }
-
-    public override void OnJoinedLobby()
-    {
-        if (this.sceneName != null)
-        {
-            PhotonNetwork.CreateRoom(this.sceneName);
-        }
-    }
-
-    public override void OnCreateRoomFailed(short returnCode, string message)
-    {
-        JoinRoom();
-    }
-
-    public void JoinRoom()
-    {
-        if (this.sceneName != null)
-        {
-            PhotonNetwork.JoinRoom(this.sceneName);
-        }
-    }
-    public override void OnJoinedRoom()
-    {
-        if (this.sceneName != null)
-        {
-            PhotonNetwork.LoadLevel(this.sceneName);
-        }
-    }
 }
 
