@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
+    [SerializeField] public SceneTransition transition;
     IEnumerator WaitASecond(string type)
     {
         yield return new WaitForSeconds(1f);
@@ -23,10 +24,10 @@ public class Menu : MonoBehaviour
                 SceneManager.LoadScene(0);
                 break;
             case "room":
-                SceneManager.LoadScene("Room");
+                transition.ConnectScene("Room");
                 break;
             case "yard":
-                SceneManager.LoadScene("ShoolYard");
+                transition.ConnectScene("ShoolYard");
                 break;
             case "options":
                 DontDestroyOnLoad(obj);

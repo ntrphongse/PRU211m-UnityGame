@@ -16,6 +16,8 @@ public class GameController : MonoBehaviour
     [SerializeField] AudioSource music;
     [SerializeField] AudioSource roomMusic;
     [SerializeField] Text scoreText;
+    [SerializeField] SceneTransition transition;
+
     GameState state;
     private void Start()
     {
@@ -84,13 +86,13 @@ public class GameController : MonoBehaviour
     public void ExitGame()
     {
         state = GameState.Ended;
-        SceneManager.LoadScene("Menu");
+        transition.ConnectScene("Menu");
     }
 
     public void RestartGame()
     {
         state = GameState.Ended;
-        SceneManager.LoadScene("ShoolYard");
+        transition.ConnectScene("ShoolYard");
     }
 
     public void StartBattle(string npcName)

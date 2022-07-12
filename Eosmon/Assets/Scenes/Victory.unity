@@ -216,6 +216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9707a8a86728e824b8b0ac459d75caab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  transition: {fileID: 0}
 --- !u!1 &15743888
 GameObject:
   m_ObjectHideFlags: 0
@@ -461,6 +462,10 @@ MonoBehaviour:
   level: 5
   isPlayerUnit: 0
   hitSound: {fileID: 0}
+  animator: {fileID: 0}
+  bossWalkingSound: {fileID: 0}
+  finalMovementSound: {fileID: 0}
+  background: {fileID: 0}
 --- !u!1 &152542684
 GameObject:
   m_ObjectHideFlags: 0
@@ -960,6 +965,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9707a8a86728e824b8b0ac459d75caab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  transition: {fileID: 557443900}
 --- !u!114 &507185405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -973,6 +979,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneIndex: 1
+  loadingIngame: {fileID: 0}
 --- !u!222 &507185406
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1182,6 +1189,52 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Skip
+--- !u!1 &557443899
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 557443901}
+  - component: {fileID: 557443900}
+  m_Layer: 0
+  m_Name: SceneTransition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &557443900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557443899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35cea392e13a9784391778956fdf3de1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneIndex: 0
+  loadingIngame: {fileID: 0}
+--- !u!4 &557443901
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557443899}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.5705285, y: 2.7886655, z: -0.0993114}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &565741326
 GameObject:
   m_ObjectHideFlags: 0
@@ -1357,6 +1410,10 @@ MonoBehaviour:
   level: 5
   isPlayerUnit: 1
   hitSound: {fileID: 0}
+  animator: {fileID: 0}
+  bossWalkingSound: {fileID: 0}
+  finalMovementSound: {fileID: 0}
+  background: {fileID: 0}
 --- !u!1 &711899368
 GameObject:
   m_ObjectHideFlags: 0
@@ -1683,6 +1740,7 @@ MonoBehaviour:
   nameText: {fileID: 791906499}
   levelText: {fileID: 955319867}
   kpBar: {fileID: 1742682648}
+  kpImage: {fileID: 0}
 --- !u!1 &784169686
 GameObject:
   m_ObjectHideFlags: 0
@@ -1728,11 +1786,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e90a927a65dde2439796408f7cd8535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnPlayers: {fileID: 0}
   playerController: {fileID: 0}
   battleSystem: {fileID: 0}
   worldCam: {fileID: 728935609}
+  follow: {fileID: 0}
   battleCam: {fileID: 1852883742}
   music: {fileID: 803277380}
+  roomMusic: {fileID: 0}
+  scoreText: {fileID: 0}
 --- !u!4 &784169689
 Transform:
   m_ObjectHideFlags: 0
@@ -2813,6 +2875,7 @@ MonoBehaviour:
   nameText: {fileID: 565741328}
   levelText: {fileID: 1831458300}
   kpBar: {fileID: 859404269}
+  kpImage: {fileID: 0}
 --- !u!1 &1651076774
 GameObject:
   m_ObjectHideFlags: 0
@@ -3332,15 +3395,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a796deb69791aa4891bedda091350f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jsonFile: {fileID: 4900000, guid: 2a87ad7ec5d82294b9f46139aa78bd84, type: 3}
+  learning: {fileID: 0}
+  questionEasy: {fileID: 0}
   player: {fileID: 626061787}
+  hero: {fileID: 0}
   playerHud: {fileID: 1571705770}
   enemy: {fileID: 116749958}
+  boss: {fileID: 0}
   enemyHud: {fileID: 773724688}
   dialogBox: {fileID: 362414507}
   q: {fileID: 0}
-  gameController: {fileID: 784169688}
   timer: {fileID: 0}
+  bossMusic: {fileID: 0}
+  comeBackMusic: {fileID: 0}
+  mainMenu: {fileID: 0}
+  zText: {fileID: 0}
+  _bossCanvasGroup: {fileID: 0}
+  battleCam: {fileID: 0}
 --- !u!4 &1900204355
 Transform:
   m_ObjectHideFlags: 0

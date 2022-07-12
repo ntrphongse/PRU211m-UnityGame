@@ -1599,12 +1599,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e90a927a65dde2439796408f7cd8535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnPlayers: {fileID: 0}
   playerController: {fileID: 1350858606}
   battleSystem: {fileID: 1900204354}
   worldCam: {fileID: 728935609}
+  follow: {fileID: 0}
   battleCam: {fileID: 1852883742}
   music: {fileID: 0}
   roomMusic: {fileID: 0}
+  scoreText: {fileID: 0}
+  transition: {fileID: 1384450597}
 --- !u!4 &784169689
 Transform:
   m_ObjectHideFlags: 0
@@ -2820,7 +2824,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 784169688}
         m_TargetAssemblyTypeName: GameController, Assembly-CSharp
-        m_MethodName: ExitGame
+        m_MethodName: RestartGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3066,6 +3070,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 152542688}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1384450596
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1384450598}
+  - component: {fileID: 1384450597}
+  m_Layer: 0
+  m_Name: SceneTransition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1384450597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384450596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35cea392e13a9784391778956fdf3de1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneIndex: 0
+  loadingIngame: {fileID: 0}
+--- !u!4 &1384450598
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384450596}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.1579864, y: 5.025811, z: -0.12392958}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1545280671
 GameObject:

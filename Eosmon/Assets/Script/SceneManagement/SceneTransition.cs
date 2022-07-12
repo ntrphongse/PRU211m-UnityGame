@@ -9,6 +9,22 @@ public class SceneTransition : MonoBehaviourPunCallbacks
 {
     [SerializeField] private int sceneIndex;
     public LoadingIngame loadingIngame;
+
+    public void ConnectScene(string sceneName)
+    {
+        PlayerPrefs.SetString("sceneName", sceneName);
+        if (!PhotonNetwork.IsConnected)
+        {
+            SceneManager.LoadScene(sceneName);
+        }
+        else
+        {
+            if (PhotonNetwork.InRoom)
+            {
+                PhotonNetwork.LoadLevel("LoadingIngame");
+            }
+        }
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -38,18 +54,7 @@ public class SceneTransition : MonoBehaviourPunCallbacks
                          );
                     break;
             }
-            PlayerPrefs.SetString("sceneName", NameFromIndex(sceneIndex));
-            if (!PhotonNetwork.IsConnected)
-            {
-                SceneManager.LoadScene(sceneIndex);
-            }
-            else
-            {
-                if (PhotonNetwork.InRoom)
-                {
-                    PhotonNetwork.LoadLevel("LoadingIngame");
-                }
-            }
+            this.ConnectScene(NameFromIndex(sceneIndex));
         }
     }
 
@@ -61,7 +66,5 @@ public class SceneTransition : MonoBehaviourPunCallbacks
         int dot = name.LastIndexOf('.');
         return name.Substring(0, dot);
     }
-
-
 }
 
