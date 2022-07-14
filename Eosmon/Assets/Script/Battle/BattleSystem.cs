@@ -372,7 +372,6 @@ public class BattleSystem : MonoBehaviour
         if (state == BattleState.PlayerAction)
         {
             HandleActionSelection();
-
         }
         else if (state == BattleState.PLayerMove)
         {

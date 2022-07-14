@@ -77,6 +77,14 @@ public class BattleDialogBox : MonoBehaviour
             }
         }
     }
+
+    public void setActionText(string[] actions)
+    {
+        for (int i = 0; i < actions.Length; i++)
+        {
+            actionsText[i].text = actions[i];
+        }
+    }
     public void setMoveNames(SuggestedAnswers answers)
     {
         for (int i = 0; i < 4; i++)

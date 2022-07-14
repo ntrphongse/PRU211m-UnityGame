@@ -17,6 +17,7 @@ public class GameController : MonoBehaviour
     [SerializeField] AudioSource roomMusic;
     [SerializeField] Text scoreText;
     [SerializeField] SceneTransition transition;
+    [SerializeField] BattleDialogBox challengeDialogBox;
 
     GameState state;
     private void Start()
@@ -53,6 +54,11 @@ public class GameController : MonoBehaviour
         }
     }
 
+    public BattleDialogBox ToggleChallengeDialogBox(bool value)
+    {
+        challengeDialogBox.gameObject.SetActive(value);
+        return challengeDialogBox.gameObject.GetComponent<BattleDialogBox>();
+    }
     void EndGame(bool won)
     {
         if (won)
