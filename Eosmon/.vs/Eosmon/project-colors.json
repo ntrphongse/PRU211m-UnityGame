@@ -30,7 +30,12 @@
       "ProjectGuid": "cd979d1b-c9e4-2685-d0fc-8a9ae195f875",
       "DisplayName": "PhotonUnityNetworking.Demos",
       "ColorIndex": 4
+    },
+    "ae16acf5-a063-5c72-d5af-c7079cadc150": {
+      "ProjectGuid": "ae16acf5-a063-5c72-d5af-c7079cadc150",
+      "DisplayName": "PhotonChat",
+      "ColorIndex": 5
     }
   },
-  "NextColorIndex": 5
+  "NextColorIndex": 6
 }

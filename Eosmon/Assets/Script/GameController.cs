@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Photon.Pun;
+using Hashtable = ExitGames.Client.Photon.Hashtable;
 
 public enum GameState { FreeRoam, Battle, Dialog, Died, Finished, Ended }
-public class GameController : MonoBehaviour
+public class GameController : MonoBehaviourPun
 {
     [SerializeField] SpawnPlayers spawnPlayers;
     [SerializeField] PlayerMovement playerController;
@@ -45,8 +47,8 @@ public class GameController : MonoBehaviour
                 music.Stop();
             }
         }
-        battleSystem.OnWiningGame += EndGame;
-        battleSystem.OnBattleOver += EndBattle;
+        if (battleSystem != null) battleSystem.OnWiningGame += EndGame;
+        if (battleSystem != null) battleSystem.OnBattleOver += EndBattle;
         if (DialogManager.Instance != null)
         {
             DialogManager.Instance.OnShowDialog += () => { state = GameState.Dialog; };
@@ -56,8 +58,12 @@ public class GameController : MonoBehaviour
 
     public BattleDialogBox ToggleChallengeDialogBox(bool value)
     {
-        challengeDialogBox.gameObject.SetActive(value);
-        return challengeDialogBox.gameObject.GetComponent<BattleDialogBox>();
+        if (challengeDialogBox != null)
+        {
+            challengeDialogBox.gameObject.SetActive(value);
+            return challengeDialogBox.gameObject.GetComponent<BattleDialogBox>();
+        }
+        return null;
     }
     void EndGame(bool won)
     {
@@ -81,9 +87,9 @@ public class GameController : MonoBehaviour
             GlobalVariables.totalScore += 50;
             music.Stop();
             state = GameState.FreeRoam;
-            battleSystem.gameObject.SetActive(false);
+            if (battleSystem != null) battleSystem.gameObject.SetActive(false);
             worldCam.gameObject.SetActive(true);
-            battleCam.gameObject.SetActive(false);
+            if (battleCam != null) battleCam.gameObject.SetActive(false);
             if (scoreText != null)
                 scoreText.text = "Your Score: " + GlobalVariables.totalScore;
         }
@@ -91,6 +97,7 @@ public class GameController : MonoBehaviour
 
     public void ExitGame()
     {
+        PhotonNetwork.LocalPlayer.SetCustomProperties(new Hashtable { { "isLeftRoom", true } });
         state = GameState.Ended;
         transition.ConnectScene("Menu");
     }
@@ -108,10 +115,10 @@ public class GameController : MonoBehaviour
             music.Play();
         }
         state = GameState.Battle;
-        battleSystem.gameObject.SetActive(true);
+        if (battleSystem != null) battleSystem.gameObject.SetActive(true);
         worldCam.gameObject.SetActive(false);
-        battleCam.gameObject.SetActive(true);
-        battleSystem.StartBattle(npcName);
+        if (battleCam != null) battleCam.gameObject.SetActive(true);
+        if (battleSystem != null) battleSystem.StartBattle(npcName);
     }
 
     public void MuteMusic()
@@ -131,7 +138,7 @@ public class GameController : MonoBehaviour
         if (state == GameState.FreeRoam)
         {
             worldCam.gameObject.SetActive(true);
-            battleCam.gameObject.SetActive(false);
+            if (battleCam != null) battleCam.gameObject.SetActive(false);
             playerController.HandleUpdate();
         }
         else if (state == GameState.Dialog)
@@ -143,13 +150,13 @@ public class GameController : MonoBehaviour
         }
         else if (state == GameState.Ended)
         {
-            battleSystem.gameObject.SetActive(false);
+            if (battleSystem != null) battleSystem.gameObject.SetActive(false);
             worldCam.gameObject.SetActive(true);
-            battleCam.gameObject.SetActive(false);
+            if (battleCam != null) battleCam.gameObject.SetActive(false);
         }
         else
         {
-            battleSystem.HandleUpdate();
+            if (battleSystem != null) battleSystem.HandleUpdate();
         }
     }
 }

@@ -9,7 +9,7 @@ public class ConnectToServer : MonoBehaviourPunCallbacks
     {
         if (!PhotonNetwork.IsConnected)
         {
-            PhotonNetwork.AutomaticallySyncScene = true;
+            //PhotonNetwork.AutomaticallySyncScene = true;
             isFirstTimeJoin = true;
             PhotonNetwork.ConnectUsingSettings();
         }

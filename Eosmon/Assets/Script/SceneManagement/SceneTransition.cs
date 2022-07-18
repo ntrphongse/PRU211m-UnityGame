@@ -54,7 +54,10 @@ public class SceneTransition : MonoBehaviourPunCallbacks
                          );
                     break;
             }
-            this.ConnectScene(NameFromIndex(sceneIndex));
+            if (view.IsMine)
+            {
+                this.ConnectScene(NameFromIndex(sceneIndex));
+            }
         }
     }
 

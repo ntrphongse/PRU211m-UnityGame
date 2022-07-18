@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using System;
+using Hashtable = ExitGames.Client.Photon.Hashtable;
 
 public class LoadingIngame : MonoBehaviourPunCallbacks
 {
@@ -61,5 +62,15 @@ public class LoadingIngame : MonoBehaviourPunCallbacks
         {
             PhotonNetwork.LoadLevel(this.sceneName);
         }
+    }
+
+    public override void OnLeftLobby()
+    {
+        PhotonNetwork.LocalPlayer.SetCustomProperties(new Hashtable { { "isLeftRoom", false } });
+    }
+
+    public override void OnLeftRoom()
+    {
+        PhotonNetwork.LocalPlayer.SetCustomProperties(new Hashtable { { "isLeftRoom", false } });
     }
 }

@@ -113,9 +113,18 @@ MonoBehaviour:
   interactableLayer:
     serializedVersion: 2
     m_Bits: 64
+  isInFightRoom: 0
   isFighting: 0
+  isDoneFighting: 0
   isDancing: 0
+  isReadyToFight: 0
+  isChallenger: 0
   isWaiting: 0
+  transition: {fileID: 0}
+  TakeSidetext: {fileID: 0}
+  pvpMusic: {fileID: 0}
+  victoryMusic: {fileID: 0}
+  sr: {fileID: 0}
 --- !u!95 &4749797373496445009
 Animator:
   serializedVersion: 4
