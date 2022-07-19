@@ -45,6 +45,7 @@ public class PlayerMovement : MonoBehaviourPun
     public bool isDancing;
     public bool isReadyToFight = false;
     public bool isChallenger = false;
+    public bool isCheckEnd = true;
 
 
     public bool isWaiting;
@@ -87,8 +88,6 @@ public class PlayerMovement : MonoBehaviourPun
         PhotonNetwork.LocalPlayer.SetCustomProperties(new Hashtable { { "isFighting", false } });
         PhotonNetwork.LocalPlayer.SetCustomProperties(new Hashtable { { "isDoneFighting", false } });
     }
-
-
     public void HandleUpdate()
     {
         isInFightRoom = SceneManager.GetActiveScene().name == "FightRoom";
@@ -112,22 +111,15 @@ public class PlayerMovement : MonoBehaviourPun
             {
                 isFighting = (bool)PhotonNetwork.LocalPlayer.CustomProperties["isFighting"];
             }
-            foreach (var player in PhotonNetwork.PlayerList)
-            {
-                if (player.CustomProperties.ContainsKey("isDoneFighting"))
-                {
-                    isDoneFighting = true;
-                    if (!(bool)player.CustomProperties["isDoneFighting"])
-                    {
-                        isDoneFighting = (bool)player.CustomProperties["isDoneFighting"];
-                    }
-                }
-            }
             if (PhotonNetwork.LocalPlayer.CustomProperties.ContainsKey("isChallenger"))
             {
                 isChallenger = (bool)PhotonNetwork.LocalPlayer.CustomProperties["isChallenger"];
             }
         }
+        Debug.Log("Done: " + isDoneFighting);
+        Debug.Log("ischeck: " + isCheckEnd);
+        Debug.Log("inroom: " + isInFightRoom);
+
         if (isLeftRoom)
         {
             view.RPC("HasLeftRoom", RpcTarget.All);
@@ -175,6 +167,12 @@ public class PlayerMovement : MonoBehaviourPun
                             }
                         }
                     }
+                    else if (isDoneFighting && isCheckEnd && isInFightRoom)
+                    {
+                        isCheckEnd = false;
+                        isDoneFighting = false;
+                        view.RPC("EndFight", RpcTarget.All);
+                    }
                     else if (isInFightRoom && isReadyToFight && !isFighting)
                     {
                         var beginFight = (bool)player.CustomProperties["beginFight"];
@@ -190,15 +188,11 @@ public class PlayerMovement : MonoBehaviourPun
                             view.RPC("BeginFight", RpcTarget.All);
                         }
                     }
-                    else if (isDoneFighting)
-                    {
-                        view.RPC("EndFight", RpcTarget.All);
-                    }
+
                     else
                     {
                         if (!PhotonNetwork.IsConnected || (PhotonNetwork.IsConnected && view.IsMine) || isFighting)
                         {
-
                             input.x = Input.GetAxisRaw("Horizontal");
                             input.y = Input.GetAxisRaw("Vertical");
                             if (input.x != 0) input.y = 0;
@@ -218,10 +212,10 @@ public class PlayerMovement : MonoBehaviourPun
                         }
                         animator.SetBool("isMoving", isMoving);
                         if (Input.GetKeyDown(KeyCode.Z) && !isInFightRoom) Interact();
-                        if (Input.GetKeyDown(KeyCode.Z) && isFighting) Attack();
                         if (isInFightRoom && !isReadyToFight) view.RPC("CheckReady", RpcTarget.All);
-                        if (isFighting)
+                        if (isFighting && isInFightRoom)
                         {
+                            if (Input.GetKeyDown(KeyCode.Z)) Attack();
                             view.RPC("CheckEndFight", RpcTarget.All);
                             var facingDir = new Vector3(animator.GetFloat("moveX"), animator.GetFloat("moveY"));
                             var interactPos = transform.position + facingDir;
@@ -273,7 +267,7 @@ public class PlayerMovement : MonoBehaviourPun
     [PunRPC]
     public IEnumerator EndFight()
     {
-        Debug.Log("Eneded");
+        isDoneFighting = false;
         PhotonNetwork.LocalPlayer.SetCustomProperties(new Hashtable { { "isDoneFighting", false } });
         victoryMusic.Play();
         pvpMusic.Stop();
@@ -288,7 +282,6 @@ public class PlayerMovement : MonoBehaviourPun
         StartCoroutine(dialogBox.TypeDialog("You will now be returned to the study hall! "));
         yield return new WaitForSeconds(2f);
         transition.ConnectScene("Room");
-
     }
 
     [PunRPC]
@@ -367,33 +360,31 @@ public class PlayerMovement : MonoBehaviourPun
     public void BeginFight()
     {
         PhotonNetwork.LocalPlayer.SetCustomProperties(new Hashtable { { "beginFight", false } });
+        PhotonNetwork.LocalPlayer.SetCustomProperties(new Hashtable { { "isReadyToFight", false } });
         PhotonNetwork.LocalPlayer.SetCustomProperties(new Hashtable { { "isFighting", true } });
         TakeSidetext.text = "Push the opponent out of the field to win!";
         pvpMusic.Play();
     }
 
     [PunRPC]
-    public void CheckEndFight()
+    public IEnumerator CheckEndFight()
     {
-        if (view.IsMine)
+        if (transform.localPosition.y >= 4 || transform.localPosition.y <= -6 || transform.localPosition.x >= 8 || transform.localPosition.x <= -7)
         {
-            if (transform.localPosition.y >= 4 || transform.localPosition.y <= -6 || transform.localPosition.x >= 8 || transform.localPosition.x <= -7)
-            {
-                PhotonNetwork.LocalPlayer.SetCustomProperties(new Hashtable { { "isFighting", false } });
-                PhotonNetwork.LocalPlayer.SetCustomProperties(new Hashtable { { "isDoneFighting", true } });
-
-            }
-        }
-        if (!view.IsMine)
-        {
-            if (transform.localPosition.y >= 4 || transform.localPosition.y <= -6 || transform.localPosition.x >= 8 || transform.localPosition.x <= -7)
-            {
-                PhotonNetwork.LocalPlayer.SetCustomProperties(new Hashtable { { "isFighting", false } });
-                PhotonNetwork.LocalPlayer.SetCustomProperties(new Hashtable { { "isDoneFighting", true } });
-
-            }
+            PhotonNetwork.LocalPlayer.SetCustomProperties(new Hashtable { { "isFighting", false } });
+            TakeSidetext.text = "The struggle has ended!!!";
+            yield return new WaitForSeconds(1f);
+            view.RPC("SetEndFight", RpcTarget.All);
         }
     }
+
+    [PunRPC]
+    public void SetEndFight()
+    {
+        isDoneFighting = true;
+        PhotonNetwork.LocalPlayer.SetCustomProperties(new Hashtable { { "isDoneFighting", false } });
+    }
+
     [PunRPC]
     public void CheckReady()
     {

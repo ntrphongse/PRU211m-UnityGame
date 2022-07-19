@@ -8,6 +8,7 @@ public class InstituteEntrance : MonoBehaviourPunCallbacks
 {
     public void CreateRoom()
     {
+        Debug.Log("CreateRoom");
         try
         {
             PhotonNetwork.CreateRoom("ShoolYard");

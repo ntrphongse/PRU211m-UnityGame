@@ -119,6 +119,7 @@ MonoBehaviour:
   isDancing: 0
   isReadyToFight: 0
   isChallenger: 0
+  isCheckEnd: 1
   isWaiting: 0
   transition: {fileID: 0}
   TakeSidetext: {fileID: 0}

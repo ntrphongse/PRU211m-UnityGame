@@ -51,6 +51,8 @@ MonoBehaviour:
   - DoDamage
   - CheckEndFight
   - EndFight
+  - SetEndGame
+  - SetEndFight
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1
