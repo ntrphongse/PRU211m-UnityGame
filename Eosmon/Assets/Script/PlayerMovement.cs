@@ -116,10 +116,6 @@ public class PlayerMovement : MonoBehaviourPun
                 isChallenger = (bool)PhotonNetwork.LocalPlayer.CustomProperties["isChallenger"];
             }
         }
-        Debug.Log("Done: " + isDoneFighting);
-        Debug.Log("ischeck: " + isCheckEnd);
-        Debug.Log("inroom: " + isInFightRoom);
-
         if (isLeftRoom)
         {
             view.RPC("HasLeftRoom", RpcTarget.All);
