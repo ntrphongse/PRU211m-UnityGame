@@ -17,7 +17,7 @@ public class BattleHud : MonoBehaviour
         _lecturer = lecturer;
         nameText.text = lecturer.Base.Name;
         levelText.text = "lvl" + lecturer.Level;
-        if (lecturer.Base.Name == "01101100011010000110101101110000")
+        if (lecturer.Base.Name == "01101100011010000110101101110000" || lecturer.Base.Name == "Seph")
         {
             kpImage.color = Color.red;
             kpBar.SetKP(lecturer.KP / lecturer.MaxKp);

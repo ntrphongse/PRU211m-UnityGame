@@ -4,6 +4,7 @@ using UnityEngine;
 using System;
 using UnityEngine.UI;
 using DG.Tweening;
+using UnityEngine.Video;
 
 public enum BattleState { Start, PlayerAction, PLayerMove, EnemyMove, Busy, BossFight }
 
@@ -15,6 +16,8 @@ public class BattleSystem : MonoBehaviour
 
     [SerializeField] BattleUnit player;
     [SerializeField] BattleUnit hero;
+    [SerializeField] BattleUnit seph;
+    [SerializeField] Sprite sephBG;
     [SerializeField] BattleHud playerHud;
     [SerializeField] BattleUnit enemy;
     [SerializeField] BattleUnit boss;
@@ -23,16 +26,17 @@ public class BattleSystem : MonoBehaviour
     [SerializeField] QuestionBase q;
     [SerializeField] TImer timer;
     [SerializeField] AudioSource bossMusic;
+    [SerializeField] AudioSource sephMusic;
     [SerializeField] AudioSource comeBackMusic;
     [SerializeField] Image mainMenu;
     [SerializeField] Text zText;
-
+    [SerializeField] VideoPlayer videoPlayer;
     [SerializeField] CanvasGroup _bossCanvasGroup;
     [SerializeField] Camera battleCam;
 
 
 
-
+    private bool IsPhaseTwo;
     private bool IsBossFight;
     private bool IsComeback;
     private int noOfFaints;
@@ -63,16 +67,16 @@ public class BattleSystem : MonoBehaviour
 
     public IEnumerator SetupBattle(string npcName)
     {
+
         if (GameObject.Find("RoomBGMUSIC") != null)
         {
             GameObject obj = GameObject.Find("RoomBGMUSIC");
             obj.SetActive(false);
         }
-        GameObject.Find("score").SetActive(false);
-        GameObject.Find("Press [ Z ]").SetActive(false);
-        GameObject.Find("ImgToMainMenuInRoom").SetActive(false);
-
-
+        GameObject.Find("score")?.SetActive(false);
+        GameObject.Find("Press [ Z ]")?.SetActive(false);
+        GameObject.Find("ImgToMainMenuInRoom")?.SetActive(false);
+        IsPhaseTwo = false;
         IsBossFight = false;
         IsComeback = false;
         player.Setup("Student");
@@ -95,8 +99,6 @@ public class BattleSystem : MonoBehaviour
         {
             yield return dialogBox.TypeDialog($"You shouldn't have come here.");
             yield return new WaitForSeconds(2f);
-            yield return dialogBox.TypeDialog($"Did you not hear what the others were saying?");
-            yield return new WaitForSeconds(2f);
             yield return dialogBox.TypeDialog($"...........................");
             yield return new WaitForSeconds(2f);
             yield return dialogBox.TypeDialog($"Ughhhhh..... Fine.");
@@ -113,15 +115,13 @@ public class BattleSystem : MonoBehaviour
             yield return enemyHud.UpdateKP();
             yield return dialogBox.TypeDialog(".................??? \n No, this cannot be!?!?");
             yield return new WaitForSeconds(2f);
-            yield return dialogBox.TypeDialog("You fool! You have doomed us all!!!");
-            yield return new WaitForSeconds(2f);
             enemy.PLayFaintAnimation();
 
             IsBossFight = true;
             boss.Setup("01101100011010000110101101110000");
             enemyHud.SetData(boss.Lecturer);
             yield return dialogBox.TypeDialog($"The lecturer 01101100011010000110101101110000 appeared.");
-            yield return new WaitForSeconds(15f); 
+            yield return new WaitForSeconds(15f);
             if (GlobalVariables.difficulty == 0)
             {
                 q = enemy.Lecturer.GetRandomQuestion(questionEasy);
@@ -140,7 +140,6 @@ public class BattleSystem : MonoBehaviour
 
     IEnumerator PerformPlayerMove(int currentMove)
     {
-
         bool correct = false;
         timer.StopTimer();
         switch (q.CorrectAnswer)
@@ -158,19 +157,27 @@ public class BattleSystem : MonoBehaviour
         bool isPlayerFainted = false;
         if (correct)
         {
-            if (IsComeback)
+            if (IsComeback && !IsPhaseTwo)
             {
                 hero.PlayAttacAnimation();
             }
-            else
+            else if (!IsComeback)
             {
                 player.PlayAttacAnimation();
             }
             if (IsBossFight)
             {
-                boss.PlayHitAnimation();
-                if (IsComeback)
+                if (!IsPhaseTwo) boss.PlayHitAnimation();
+                if (IsComeback && !IsPhaseTwo)
                 {
+                    isLecturerFainted = boss.Lecturer.TakeDamage(q, player.Lecturer, 10);
+                }
+                else if (IsPhaseTwo)
+                {
+                    hero.PlayAttacCloud();
+                    yield return new WaitForSeconds(0.8f);
+                    hero.SetCloudNormal();
+                    seph.PlayHitAnimation();
                     isLecturerFainted = boss.Lecturer.TakeDamage(q, player.Lecturer, 10);
                 }
                 else
@@ -188,9 +195,15 @@ public class BattleSystem : MonoBehaviour
         }
         else
         {
-            if (IsBossFight)
+            if (IsBossFight && !IsPhaseTwo)
             {
                 boss.PlayAttacAnimation();
+            }
+            else if (IsPhaseTwo)
+            {
+                seph.PlayAttacSeph();
+                yield return new WaitForSeconds(24 / 16);
+                seph.SetSephNormal();
             }
             else
             {
@@ -217,7 +230,7 @@ public class BattleSystem : MonoBehaviour
         }
         if (isLecturerFainted)
         {
-            if (IsComeback)
+            if (IsComeback && !IsPhaseTwo)
             {
                 battleCam.DOOrthoSize(3.5f, 0.5f);
                 hero.PlayFinalMovementAnimation();
@@ -226,21 +239,67 @@ public class BattleSystem : MonoBehaviour
                 yield return new WaitForSeconds(2.5f);
                 boss.LoopHitAnimation();
                 yield return new WaitForSeconds(8f);
+                yield return dialogBox.TypeDialog("You are worthy...");
+                yield return new WaitForSeconds(2f);
             }
-            yield return dialogBox.TypeDialog("You are worthy...");
-            if (IsBossFight)
+            //Begin Phase 2
+            if (IsBossFight && !IsPhaseTwo)
             {
+                isLecturerFainted = false;
+                IsPhaseTwo = true;
+                comeBackMusic.DOFade(0f, 1f);
+                boss.PlayHitAnimation();
+                yield return new WaitForSeconds(2f);
+                yield return dialogBox.TypeDialog("??!?!");
+                boss.PlayHitAnimation();
+                yield return new WaitForSeconds(0.5f);
+                boss.PlayHitAnimation();
+                yield return new WaitForSeconds(0.5f);
+                boss.PlayHitAnimation();
+                yield return new WaitForSeconds(0.5f);
+                boss.PlayHitAnimation();
+                yield return new WaitForSeconds(0.5f);
+                yield return dialogBox.TypeDialog("No, no you are NOT...");
+                yield return new WaitForSeconds(2f);
                 boss.PLayFaintAnimation();
+                yield return dialogBox.TypeDialog("Let's take this fight somewhere else, shall we?");
+                yield return new WaitForSeconds(2f);
+                _bossCanvasGroup.DOFade(1, 1f);
+                yield return new WaitForSeconds(2f);
+                if (videoPlayer != null)
+                {
+                    videoPlayer.Play();
+                    videoPlayer.loopPointReached += setUpSephBattle;
+                    yield return new WaitForSeconds(2f);
+                    _bossCanvasGroup.DOFade(0, 3f);
+                }
+            }
+            else if (IsPhaseTwo)
+            {
+                IsPhaseTwo = false;
+                battleCam.DOOrthoSize(3.5f, 0.5f);
+                hero.PlayFinalMovementAnimation();
+                yield return new WaitForSeconds(2f);
+                battleCam.DOOrthoSize(6.3f, 0.5f);
+                yield return new WaitForSeconds(2.5f);
+                seph.LoopHitAnimation();
+                yield return new WaitForSeconds(8f);
+                yield return dialogBox.TypeDialog("I guess you really are worthy...");
+                yield return new WaitForSeconds(2f);
+                seph.PLayFaintAnimation();
             }
             else
             {
                 enemy.PLayFaintAnimation();
             }
             yield return new WaitForSeconds(2f);
-            OnBattleOver(true);
-            if (IsBossFight)
+            if (IsPhaseTwo == false)
             {
-                OnWiningGame(true);
+                OnBattleOver(true);
+                if (IsBossFight)
+                {
+                    OnWiningGame(true);
+                }
             }
         }
         else if (isPlayerFainted)
@@ -263,7 +322,7 @@ public class BattleSystem : MonoBehaviour
                         boss.PlayAttacAnimation();
                         player.PlayHitAnimation();
                         player.Lecturer.TakeDamage(q, player.Lecturer, 20);
-                        yield return dialogBox.TypeDialog("wHy Won'T yUou dIeeeeeeeeeeeeeeeeeeeee??????????????");
+                        yield return dialogBox.TypeDialog("wHy Won'T yUou DiEEEEEE??????????????");
                         yield return new WaitForSeconds(2f);
                         boss.PlayAttacAnimation();
                         player.PlayHitAnimation();
@@ -282,23 +341,26 @@ public class BattleSystem : MonoBehaviour
                         dialogBox.SetColor(Color.blue);
                         yield return dialogBox.TypeDialog("*You could have RUN....");
                         yield return new WaitForSeconds(2f);
-                        yield return dialogBox.TypeDialog("*But you PERSISTED");
+                        yield return dialogBox.TypeDialog("*But you PERSISTED, brave child...");
                         yield return new WaitForSeconds(2f);
-                        yield return dialogBox.TypeDialog("*You have one more chance left... \n Do not waste it...");
+                        yield return dialogBox.TypeDialog("*Rest my child... \n You have done your part...");
+                        yield return new WaitForSeconds(2f);
+                        yield return dialogBox.TypeDialog("*Leave the rest to me... ");
                         IsComeback = true;
                         player.PlayHealAnimation();
                         player.Lecturer.TakeDamage(q, player.Lecturer, -50);
                         yield return playerHud.UpdateKP();
                         yield return new WaitForSeconds(2f);
-
+                        yield return dialogBox.TypeDialog("*Dawnbringer, I beckon thee... ");
+                        yield return new WaitForSeconds(2f);
                         _bossCanvasGroup.DOFade(1, 1f);
                         yield return new WaitForSeconds(1f);
                         player.PLayFaintAnimation();
+                        GameObject.Find("NameTextPlayer").GetComponent<Text>().text = "Dawnbringer";
                         hero.Setup("Hero");
                         yield return new WaitForSeconds(2f);
                         _bossCanvasGroup.DOFade(0, 2f);
                         yield return new WaitForSeconds(2f);
-
                         StartCoroutine(EnemyMove());
                     }
                     else
@@ -306,16 +368,31 @@ public class BattleSystem : MonoBehaviour
                         yield return dialogBox.TypeDialog("gOod bYeeeeeee");
                         hero.PLayFaintAnimation();
                         yield return new WaitForSeconds(2f);
-                        OnBattleOver(false);
+                        OnBattleOver(true);
                         OnWiningGame(false);
                     }
+                }
+                else if (IsPhaseTwo)
+                {
+                    seph.PlaySephLimAnimation();
+                    yield return new WaitForSeconds(2f);
+                    battleCam.DOOrthoSize(6.3f, 0.5f);
+                    yield return new WaitForSeconds(2.5f);
+                    hero.LoopHitAnimation();
+                    yield return new WaitForSeconds(6f);
+                    seph.StopSephLimAnimation();
+                    yield return dialogBox.TypeDialog("Farewell...");
+                    hero.PLayFaintAnimation();
+                    yield return new WaitForSeconds(5f);
+                    OnBattleOver(true);
+                    OnWiningGame(false);
                 }
                 else
                 {
                     yield return dialogBox.TypeDialog("gOod bYeeeeeee");
                     player.PLayFaintAnimation();
                     yield return new WaitForSeconds(2f);
-                    OnBattleOver(false);
+                    OnBattleOver(true);
                     OnWiningGame(false);
                 }
             }
@@ -334,9 +411,30 @@ public class BattleSystem : MonoBehaviour
         }
     }
 
+    public void setUpSephBattle(VideoPlayer vp)
+    {
+        GameObject.Find("NameTextEnemy").GetComponent<Text>().text = "Nightcaller";
+        _bossCanvasGroup.DOFade(1, 0.1f);
+        StartCoroutine(sephHP());
+        if (sephMusic != null) { sephMusic.Play(); }
+        StartCoroutine(EnemyMove());
+        vp.Stop();
+    }
+
+    IEnumerator sephHP()
+    {
+        yield return new WaitForSeconds(2f);
+        seph.Setup("Seph");
+        seph.PlayEnterAnimation("Seph");
+        if (sephBG != null) GameObject.Find("BattleBackground").GetComponent<Image>().sprite = sephBG;
+        _bossCanvasGroup.DOFade(0, 2f);
+        boss.Lecturer.TakeDamage(q, boss.Lecturer, -50);
+        yield return enemyHud.UpdateKP();
+    }
+
     IEnumerator EnemyMove()
     {
-        state = BattleState.EnemyMove; 
+        state = BattleState.EnemyMove;
         if (GlobalVariables.difficulty == 0)
         {
             q = enemy.Lecturer.GetRandomQuestion(questionEasy);

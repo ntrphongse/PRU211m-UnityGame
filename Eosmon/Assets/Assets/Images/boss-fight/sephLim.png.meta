@@ -1,0 +1,1552 @@
+fileFormatVersion: 2
+guid: b54f0563f2d1bee4496bd128210dcaa0
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sephLim_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4190
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 156566747448443409cf9ebf807b22cd
+      internalID: 631929234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_1
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 4190
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9d71bef3137ee24e93c556140b98afb
+      internalID: 1945607565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_2
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 4190
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f750964804d8b7946ab58c1b743c6238
+      internalID: 1978989242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_3
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 4190
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c56f7cc4717d48c46a102f2b27c2f28a
+      internalID: 1660025719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_4
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 4190
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 269075cbd32d5b24e902260e6761086c
+      internalID: -2022830153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3843
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d8bc0c5c881bfa4d9c693311aa3b9c0
+      internalID: 1139978613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_6
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 3843
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6e8e450e20a1ef468ddcf81524b8455
+      internalID: 1670187447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_7
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 3843
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10b68b7c60a642a4c960dd27c88dc0bc
+      internalID: -1758963461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_8
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 3843
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0110b6a19f5eaf4daa43db33d78214c
+      internalID: -1882298590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_9
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 3843
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7171783929d6eb4a9e5510442394f79
+      internalID: 1582252257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3496
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2d3a156706017348be634a55dd8b7f0
+      internalID: 1268135246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_11
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 3496
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c152fcb486ce2234b92d5741dbd8c9f0
+      internalID: 2045263582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_12
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 3496
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57cbe1152c622a7419dd72c56c4b2df3
+      internalID: 925206152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_13
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 3496
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 262e9683045b78048945ea5e561d90c8
+      internalID: 2114116487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_14
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 3496
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4746d6988c3708a40b33822a312f4b21
+      internalID: 1715472911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3149
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7ed4225977a3b94b8bb0429ac76646b
+      internalID: 904941503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_16
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 3149
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 022ae82d0154ae44eb373d568dab442d
+      internalID: -243158226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_17
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 3149
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34d6c908bf9293743bbd30bdd79f9c27
+      internalID: -710463058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_18
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 3149
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7bc16a079fedaa4aa2c708cc55276e5
+      internalID: 91202298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_19
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 3149
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baae94deaac3b4245b5289121435b29e
+      internalID: 2040968485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2802
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac8dc1d5c9f0c3344a582d3b8a5c04dd
+      internalID: -153265966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_21
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 2802
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57926b9d64f224d44b67039b5f181d74
+      internalID: -716076410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_22
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 2802
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44b5fdf3023e7db41b391f559094e683
+      internalID: 45202680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_23
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 2802
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 251aeec2f94fd9949a1d9b1c2b387ae2
+      internalID: -506662518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_24
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 2802
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beec49fd990a7aa428dea3dceb974e2d
+      internalID: -1325727374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2455
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5db59c35d53f8324ab9ff240698a437e
+      internalID: -2097964168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_26
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 2455
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 182e0f4391950c3439f786f69d7b9c8d
+      internalID: 1869955314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_27
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 2455
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f07b34e4c1f7077438c56dab9cae6c99
+      internalID: -1056720807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_28
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 2455
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bdc2b06482fa7145add27f1e2766ca6
+      internalID: 1836334724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_29
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 2455
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 289be0b80929c1b449019ca26e573733
+      internalID: 1422083320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2108
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feda9a09059a0d04587ab896155666b1
+      internalID: -1521982085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_31
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 2108
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 445988c6ad57e3d4aa10fbd7f83c85d1
+      internalID: -206004541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_32
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 2108
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae8dc11ee439d3a4ca8b7e08de43f4af
+      internalID: 1637236541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_33
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 2108
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca1099a9df3f18641aceb7a5327b9e8c
+      internalID: -1468425121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_34
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 2108
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aaa1987e95e2b4468a30c75f13207c9
+      internalID: 637754303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1761
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f44ab75b7aada62468525fa43372054a
+      internalID: -1703796199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_36
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 1761
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1409d49866d683d4982948ad0f7b1a68
+      internalID: -640886114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_37
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 1761
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad9eff4900275bd448e7618efa2447e8
+      internalID: 1839519289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_38
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 1761
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e39479791f108d24aae66d6e13b66632
+      internalID: 1378039164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_39
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 1761
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51527ef87d189744a86f631c3b6e3435
+      internalID: 239222407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1414
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa3375d3bd8253144a8bb45e0ac9c3e9
+      internalID: 322890092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_41
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 1414
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0219a159f30a9b74f980fadcdd86ee57
+      internalID: 2005757505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_42
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 1414
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db41b202da9b84e4c8f83d67519d8004
+      internalID: 1094194589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_43
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 1414
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea3dfd1e847d8b348b56b876ae943da1
+      internalID: 1000788556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_44
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 1414
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eb631028bd6b134eb4a99118522f07b
+      internalID: 1033939731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1067
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cb0f56958e392f45b6869d31e68a682
+      internalID: -972536992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_46
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 1067
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35702347818061949b73835b01c1a4ce
+      internalID: -762506494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_47
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 1067
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b6e24e5f0f53b342b97270aa2690ba7
+      internalID: -1118163353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_48
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 1067
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a21f610bfd0aead41b1c833dd46e0352
+      internalID: -1194079099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_49
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 1067
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3287666f85185e41a76bcfd2e53c1d9
+      internalID: -279858735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 720
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93a74548dda32a8429a6a525269375f5
+      internalID: 1519439136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_51
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 720
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54807a9cfe429494188d67ee4364850d
+      internalID: 1437038623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_52
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 720
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f708fd56e8f72c42839d257b7ce08c9
+      internalID: -1208156323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_53
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 720
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7ec314eb4888e54d8510657f6f542c0
+      internalID: 98646321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_54
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 720
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ea13e34964e6f343a350f7fec33d902
+      internalID: 537849701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 373
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 352d42018d732274aade2778e4e8eb9b
+      internalID: 1128657467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_56
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 373
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aefa7045eeccfa4ab5b89840e62db11
+      internalID: 1311382391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_57
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 373
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe5e7dd03e01af048b2604537182e2ba
+      internalID: 131817615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_58
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 373
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6112b3cf8cec60346a3e2913f2bb9eef
+      internalID: -419691977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_59
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 373
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9be208cef0a41047824191a9e115a93
+      internalID: 198567190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 26
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2ad4852517931f44a5441dd4bae2d33
+      internalID: 1865610579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_61
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 26
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f492c2370d8b3134ab7c61dbe6f17e40
+      internalID: 2089365319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_62
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 26
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09120eb07bf0d294191fb00d944e0510
+      internalID: 213333995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_63
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 26
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fe86c1c8998f034db63e88cc240fb48
+      internalID: 1123873774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sephLim_64
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 26
+        width: 435
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a46549d8a7e28140884429fdfd25abd
+      internalID: 554901707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      sephLim_19: 2040968485
+      sephLim_3: 1660025719
+      sephLim_16: -243158226
+      sephLim_11: 2045263582
+      sephLim_37: 1839519289
+      sephLim_29: 1422083320
+      sephLim_32: 1637236541
+      sephLim_46: -762506494
+      sephLim_39: 239222407
+      sephLim_44: 1033939731
+      sephLim_51: 1437038623
+      sephLim_45: -972536992
+      sephLim_50: 1519439136
+      sephLim_8: -1882298590
+      sephLim_18: 91202298
+      sephLim_61: 2089365319
+      sephLim_54: 537849701
+      sephLim_36: -640886114
+      sephLim_22: 45202680
+      sephLim_26: 1869955314
+      sephLim_59: 198567190
+      sephLim_33: -1468425121
+      sephLim_28: 1836334724
+      sephLim_41: 2005757505
+      sephLim_20: -153265966
+      sephLim_34: 637754303
+      sephLim_7: -1758963461
+      sephLim_42: 1094194589
+      sephLim_55: 1128657467
+      sephLim_12: 925206152
+      sephLim_60: 1865610579
+      sephLim_57: 131817615
+      sephLim_49: -279858735
+      sephLim_23: -506662518
+      sephLim_64: 554901707
+      sephLim_4: -2022830153
+      sephLim_35: -1703796199
+      sephLim_40: 322890092
+      sephLim_30: -1521982085
+      sephLim_63: 1123873774
+      sephLim_31: -206004541
+      sephLim_17: -710463058
+      sephLim_38: 1378039164
+      sephLim_25: -2097964168
+      sephLim_47: -1118163353
+      sephLim_10: 1268135246
+      sephLim_53: 98646321
+      sephLim_48: -1194079099
+      sephLim_13: 2114116487
+      sephLim_6: 1670187447
+      sephLim_15: 904941503
+      sephLim_9: 1582252257
+      sephLim_2: 1978989242
+      sephLim_24: -1325727374
+      sephLim_1: 1945607565
+      sephLim_5: 1139978613
+      sephLim_14: 1715472911
+      sephLim_62: 213333995
+      sephLim_52: -1208156323
+      sephLim_58: -419691977
+      sephLim_56: 1311382391
+      sephLim_21: -716076410
+      sephLim_43: 1000788556
+      sephLim_0: 631929234
+      sephLim_27: -1056720807
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

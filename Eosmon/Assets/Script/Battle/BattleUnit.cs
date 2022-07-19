@@ -43,6 +43,11 @@ public class BattleUnit : MonoBehaviour
             Lecturer.Level = 999;
             Lecturer.Base.SetMaxKp(9999);
         }
+        if (npcName == "Seph")
+        {
+            Lecturer.Level = 999;
+            Lecturer.Base.SetMaxKp(9999);
+        }
         if (isPlayerUnit)
         {
             image.sprite = Lecturer.Base.FrontSprite;
@@ -80,6 +85,10 @@ public class BattleUnit : MonoBehaviour
         {
             image.transform.DOLocalMoveX(-230f, 1f);
         }
+        else if (npcName == "Seph")
+        {
+            image.transform.DOLocalMoveX(250f, 1f);
+        }
         else
         {
             image.transform.DOLocalMoveX(originalPos.x, 1f);
@@ -103,13 +112,20 @@ public class BattleUnit : MonoBehaviour
             {
                 seq.Append(image.transform.DOLocalMoveX(250f - 50f, 0.25f));
             }
+            else if (_name == "Seph")
+            {
+                seq.Append(image.transform.DOLocalMoveX(250f - 50f, 0.25f));
+            }
             else
             {
                 seq.Append(image.transform.DOLocalMoveX(originalPos.x - 50f, 0.25f));
             }
-
         }
         if (_name == "01101100011010000110101101110000")
+        {
+            seq.Append(image.transform.DOLocalMoveX(250f, 0.25f));
+        }
+        else if (_name == "Seph")
         {
             seq.Append(image.transform.DOLocalMoveX(250f, 0.25f));
         }
@@ -125,11 +141,68 @@ public class BattleUnit : MonoBehaviour
 
     public void PlayFinalMovementAnimation()
     {
+
         image.transform.DOLocalMoveX(0f, 0.25f).OnComplete(() =>
         {
             finalMovementSound.Play();
             animator.Play("FinalMovement");
         });
+    }
+
+    public void PlayAttacSeph()
+    {
+        var seq = DOTween.Sequence();
+
+        seq.Append(image.transform.DOLocalMoveX(0f, 0.25f).OnComplete(() =>
+        {
+            image.rectTransform.sizeDelta = new Vector2(390, 174);
+            animator.Play("SephAttac");
+        }));
+    }
+
+    public void PlayAttacCloud()
+    {
+        var seq = DOTween.Sequence();
+        seq.Append(image.transform.DOLocalMoveX(0f, 0.25f).OnComplete(() =>
+        {
+            image.rectTransform.sizeDelta = new Vector2(400, 250);
+            animator.Play("CloudAttac");
+        }));
+    }
+
+
+    public void SetCloudNormal()
+    {
+        var seq = DOTween.Sequence();
+        seq.Append(image.transform.DOLocalMoveX(-230f, 0.25f).OnComplete(() =>
+        {
+            image.rectTransform.sizeDelta = new Vector2(130, 174);
+        }));
+    }
+    public void PlaySephLimAnimation()
+    {
+        image.transform.DOLocalMoveX(-100f, 0.25f).OnComplete(() =>
+        {
+            animator.SetBool("IsSephLimit", true);
+            finalMovementSound.Play();
+            //animator.Play("SephLimit");
+            image.rectTransform.sizeDelta = new Vector2(400, 400);
+        });
+    }
+
+    public void SetSephNormal()
+    {
+        var seq = DOTween.Sequence();
+        seq.Append(image.transform.DOLocalMoveX(250f, 0.25f).OnComplete(() =>
+        {
+            image.rectTransform.sizeDelta = new Vector2(165, 175);
+        }));
+    }
+
+    public void StopSephLimAnimation()
+    {
+        image.rectTransform.sizeDelta = new Vector2(165, 175);
+        animator.SetBool("IsSephLimit", false);
     }
 
     public void MoveEvent()
@@ -177,5 +250,10 @@ public class BattleUnit : MonoBehaviour
         var seq = DOTween.Sequence();
         seq.Append(image.transform.DOLocalMoveY(originalPos.y - 150f, 0.5f));
         seq.Join(image.DOFade(0f, 0.5f));
+    }
+
+    public void PlayPhaseTwoBeginAnimation()
+    {
+
     }
 }
